@@ -166,6 +166,10 @@ async def leo(ctx):
 @client.command()
 async def willy(ctx):
     await ctx.send('Se não fosse pelo leo seria a maior revelação otaka do discord\nps: perdão pela bagunça no among us')
+    
+@client.command()
+async def atecubanos(ctx):
+    await ctx.send('KKKKKK ATECUBANOS ENTENDI KKKKK MTO BOA')
 
 
 #time italy
