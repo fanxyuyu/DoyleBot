@@ -3,6 +3,8 @@ import os #to use cogs
 from discord.ext import commands, tasks
 from itertools import cycle #import to create a cycle on bot status
 
+startup_extensions = ['cogs._8ball','cogs.help','cogs.names','cogs.time']
+
 client = commands.Bot(command_prefix = 'b.')
 status = cycle(['type b.help', 'bot by: Lust#4444', 'type b.help', 'bot by: Lust#4444', 'I see you'])
 client.remove_command('help') #removes default help command
@@ -41,10 +43,14 @@ async def clear(ctx, amount: int):
 async def clear_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send('Correct use: b.clear <qntd>')
-
+        
 #load cogs
-for filename in os.listdir('./cogs'):
-    if filename.endswith('.py'):
-        client.load_extension(f'cogs.{filename[:-3]}')
+if __name__ == "__main__":
+    for extension in startup_extensions:
+        try:
+            client.load_extension(extension)
+        except Exception as e:
+            exc = '{}: {}'.format(type(e).__name__, e)
+            print('Falha ao carregar extensão {}\n{}'.format(extension, exc))
 
 client.run('NzU0MzcyNzI0OTg1NDMwMDY2.X1zyWQ.-lnZ7nKO5RZA82KjzTySb-Fih3g')
