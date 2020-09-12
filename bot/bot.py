@@ -88,7 +88,7 @@ async def _8ball(ctx, *, question): #you can't start a command with number
                 'Obrigado por perguntar, NAO!',
                 'desculpa por ser bot :(',
                 'pergunta pro cat, ele sabe a resposta certa',
-                'O importante é ser feliz e não perfeito]
+                'O importante é ser feliz e não perfeito']
     await ctx.send(f'Pergunta: {question}\nResposta: {random.choice(responses)}')
 
 #join command
