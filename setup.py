@@ -1,1 +1,1 @@
-$ pip install .
+pip install --upgrade setuptools
