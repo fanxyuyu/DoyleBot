@@ -19,3 +19,4 @@ Fun:
  
 Anime:
   - senpai: makes a user notice you
+  - hug: hugs another user
