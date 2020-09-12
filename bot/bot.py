@@ -3,7 +3,7 @@ import os #to use cogs
 from discord.ext import commands, tasks
 from itertools import cycle #import to create a cycle on bot status
 
-startup_extensions = ['cogs._8ball','cogs.help','cogs.names','cogs.time']
+startup_extensions = ['cogs._8ball','cogs.help','cogs.names','cogs.time'] #starts defined cogs
 
 client = commands.Bot(command_prefix = 'b.')
 status = cycle(['type b.help', 'bot by: Lust#4444', 'type b.help', 'bot by: Lust#4444', 'I see you'])
