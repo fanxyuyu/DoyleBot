@@ -18,6 +18,6 @@ Fun:
   - reverse: reverse a text
  
 Anime:
-  - animeinfo: shows anime commands description
+  - anihelp: shows anime commands description
   - senpai: makes a user notice you
   - hug: hugs another user
