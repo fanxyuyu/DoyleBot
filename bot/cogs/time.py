@@ -19,6 +19,5 @@ class time(commands.Cog):
         now_berlin = now_utc.astimezone(timezone('Europe/Berlin'))
         await ctx.send(f'{now_berlin.strftime(fmt)} (Italy)')
 
-
 def setup(client):
     client.add_cog(time(client))
