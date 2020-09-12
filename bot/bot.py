@@ -51,6 +51,6 @@ if __name__ == "__main__":
             client.load_extension(extension)
         except Exception as e:
             exc = '{}: {}'.format(type(e).__name__, e)
-            print('Falha ao carregar extensão {}\n{}'.format(extension, exc))
+            print('Failed to load extension {}\n{}'.format(extension, exc))
 
-client.run('NzU0MzcyNzI0OTg1NDMwMDY2.X1zyWQ.-lnZ7nKO5RZA82KjzTySb-Fih3g')
+client.run('NzU0MDQyNjgwNDEzMTI2ODA4.X1u--A.tyhgPrK7duNmyELhJZjImXXARJg')
