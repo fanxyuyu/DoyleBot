@@ -57,6 +57,7 @@ class anime(commands.Cog):
         embed.set_image(url=f'{random.choice(gifshug)}')
         await ctx.send(embed=embed)
 
+        
     #kiss another user command
     @commands.command()
     async def kiss(self, ctx, user: discord.Member = None):
@@ -95,5 +96,6 @@ class anime(commands.Cog):
         embed.set_image(url=f'{random.choice(gifskiss)}')
         await ctx.send(embed=embed)
 
+        
 def setup(client):
     client.add_cog(anime(client))
