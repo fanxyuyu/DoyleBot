@@ -85,7 +85,7 @@ async def _8ball(ctx, *, question): #you can't start a command with number
                 'sim e eu amo muito o leleo.',
                 'Obrigado por perguntar, SIM!',
                 'Obrigado por perguntar, NAO!',
-                'desculpa por ser bot :('
+                'desculpa por ser bot :(',
                 'pergunta pro cat, ele sabe a resposta certa']
     await ctx.send(f'Pergunta: {question}\nResposta: {random.choice(responses)}')
 
