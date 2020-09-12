@@ -14,10 +14,9 @@ Basic:
 Fun:
   - 8ball <question>: answer your question with a random phrase
   - names: shows a text with all names commands avaliable
-  - anime: shows a list with all anime commands
   - reverse: reverse a text
  
 Anime:
-  - anihelp: shows anime commands description
+  - anime: shows a list with all anime commands
   - senpai: makes a user notice you
   - hug: hugs another user
