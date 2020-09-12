@@ -30,7 +30,7 @@ class help(commands.Cog):
     @commands.command()
     async def anime(self, ctx):
         embed = discord.Embed(colour = discord.Colour.blue())
-        embed.add_field(name='Commands', value='senpai', inline=False)
+        embed.add_field(name='Commands', value='senpai\nhug', inline=False)
         await ctx.send(embed=embed)
 
 def setup(client):
