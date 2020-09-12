@@ -16,7 +16,7 @@ class help(commands.Cog):
         embed.set_thumbnail(url='https://i.ibb.co/S7mKyfQ/123.jpg')
         embed.add_field(name='Admin', value='clear')
         embed.add_field(name='Basic', value='help\nping\nitaly')
-        embed.add_field(name='Fun', value='8 ball\nnames\nanime\nreverse')
+        embed.add_field(name='Fun', value='8ball\nnames\nanime\nreverse')
         await ctx.send(embed=embed)
 
 #names commands
