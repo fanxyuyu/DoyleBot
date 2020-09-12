@@ -43,7 +43,7 @@ async def clear_error(ctx, error):
         await ctx.send('Correct use: b.clear <qntd>')
 
 #load cogs
-for filename in os.listdir('./cogs'):
+for filename in os.listdir('cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
