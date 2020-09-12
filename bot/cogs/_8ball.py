@@ -35,7 +35,7 @@ class _8ball(commands.Cog):
                     'sim e eu amo muito o leleo.',
                     'Obrigado por perguntar, SIM!',
                     'Obrigado por perguntar, NAO!',
-                    'desculpa por ser bot :(',
+                    'desculpa por ser um bot :(',
                     'pergunta pro cat, ele sabe a resposta certa',
                     'O importante é ser feliz e não perfeito']
         await ctx.send(f'Pergunta: {question}\nResposta: {random.choice(responses)}')
