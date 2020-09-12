@@ -69,24 +69,26 @@ async def _8ball(ctx, *, question): #you can't start a command with number
                 'que soninho... me pergunte novamente mais tarde.',
                 'que pergunta merda, parabéns.',
                 'Não tenho certeza.',
-                'Talvez sim, talvez não.',
+                'CLARO!! COM CERTEZA ABSOLUTA!',
                 'Dúvido muito.',
                 'Quem sabe :)',
                 'Essa é uma boa pergunta, eu não sei te responder.',
                 'Pra você a resposta é não.',
-                'Pra você a resposta é não.',
+                'Pra você a resposta é sim.',
                 'Esquece a pergunta te achei gatinha rsrs.',
                 'Não vou falar ^^',
                 'Pode confiar nisso.',
                 'Segundo meu horóscopo... não posso te responder.',
                 'CLARO QUE SIM!',
+                'CLARO QUE NAO!',
                 'Se fosse o baruel perguntando eu diria que sim.',
                 'sim... não... quem sabe...',
                 'sim e eu amo muito o leleo.',
                 'Obrigado por perguntar, SIM!',
                 'Obrigado por perguntar, NAO!',
                 'desculpa por ser bot :(',
-                'pergunta pro cat, ele sabe a resposta certa']
+                'pergunta pro cat, ele sabe a resposta certa',
+                'O importante é ser feliz e não perfeito]
     await ctx.send(f'Pergunta: {question}\nResposta: {random.choice(responses)}')
 
 #join command
