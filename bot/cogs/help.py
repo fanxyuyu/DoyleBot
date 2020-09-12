@@ -17,7 +17,6 @@ class help(commands.Cog):
         embed.add_field(name='Admin', value='clear')
         embed.add_field(name='Basic', value='help\nping\nitaly')
         embed.add_field(name='Fun', value='8 ball\nnames\nanime')
-        embed.set_footer(text='bot by Lust#4444')
         await ctx.send(embed=embed)
 
 #names commands
