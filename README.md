@@ -1,5 +1,5 @@
 # SimpleBot
 first simple discord bot test
-**Prefix: b.
+**Prefix: b.**
 
 # Commands: 
