@@ -65,6 +65,13 @@ async def _8ball(ctx, *, question): #you can't start a command with number
                 'desculpa por ser bot :(']
     await ctx.send(f'Pergunta: {question}\nResposta: {random.choice(responses)}')
 
+#join command
+@commands.command()
+async def join_voice(self, ctx):
+    connected = ctx.author.voice
+    if connected:
+        await connected.channel.connect()    
+
 #clear <qnt> command
 @commands.command()
 async def clear(ctx, amount: int):
