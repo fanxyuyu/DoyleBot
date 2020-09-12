@@ -10,6 +10,7 @@ class names(commands.Cog):
     @commands.command()
     async def hiter(self, ctx):
         await ctx.send('Lindo, maravilhoso e cheiroso!')
+        
     @commands.command()
     async def bruno(self, ctx):
         await ctx.send('mto zika')
@@ -29,9 +30,7 @@ class names(commands.Cog):
     @commands.command()
     async def felipe(self, ctx):
         await ctx.send('Dançando kpop olhando pra baixo pra ver o leo')
-
-
-
+        
     @commands.command()
     async def pv(self, ctx):
         embed = discord.Embed(
@@ -59,8 +58,6 @@ class names(commands.Cog):
     @commands.command()
     async def willy(self, ctx):
         await ctx.send('Se não fosse pelo leo seria a maior revelação otaka do discord\nps: perdão pela bagunça no among us')
-
-
 
 def setup(client):
     client.add_cog(names(client))
