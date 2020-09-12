@@ -44,7 +44,6 @@ class anime(commands.Cog):
                 'https://media1.tenor.com/images/7d6a56988dc7e6152ca578b7a1f24be9/tenor.gif',
                 'https://media1.tenor.com/images/79aa56112b2d0eca4f50e9df188e18ad/tenor.gif',
                 'https://media1.tenor.com/images/94c44a9898927f22dff399c2c248f433/tenor.gif',
-                'https://media1.tenor.com/images/d141e948c9745410092adfc8e7664b9a/tenor.gif',
                 'https://media1.tenor.com/images/49a21e182fcdfb3e96cc9d9421f8ee3f/tenor.gif']
         #hugs phrases
         hugs = [f'**{ctx.author.name}** hugs tightly **{user.name}**',
