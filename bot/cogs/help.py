@@ -16,7 +16,7 @@ class help(commands.Cog):
         embed.set_thumbnail(url='https://i.ibb.co/S7mKyfQ/123.jpg')
         embed.add_field(name='Admin', value='clear')
         embed.add_field(name='Basic', value='help\nping\nitaly')
-        embed.add_field(name='Fun', value='8 ball\nnames')
+        embed.add_field(name='Fun', value='8 ball\nnames\nanime')
         embed.set_footer(text='bot by Lust#4444')
         await ctx.send(embed=embed)
 
@@ -25,6 +25,13 @@ class help(commands.Cog):
     async def names(self, ctx):
         embed = discord.Embed(colour = discord.Colour.blue())
         embed.add_field(name='Names', value='baruel\nbruno\ncat\ndaniel\nfelipe\ngiovanna\nhiter\nleo\npv\nwilly', inline=False)
+        await ctx.send(embed=embed)
+
+#anime commands
+    @commands.command()
+    async def anime(self, ctx):
+        embed = discord.Embed(colour = discord.Colour.blue())
+        embed.add_field(name='Commands', value='senpai', inline=False)
         await ctx.send(embed=embed)
 
 def setup(client):
