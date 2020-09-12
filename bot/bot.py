@@ -43,9 +43,8 @@ async def clear_error(ctx, error):
         await ctx.send('Correct use: b.clear <qntd>')
 
 #load cogs
-client.load_extension("cogs._8ball")
-client.load_extension("cogs.help")
-client.load_extension("cogs.names")
-client.load_extension("cogs.time")
+for filename in os.listdir('./cogs'):
+    if filename.endswith('.py'):
+        client.load_extension(f'cogs.{filename[:-3]}')
 
 client.run('NzU0MTIwNzg2MDU0MzQ4ODAx.X1wHtg.mlPtL0-5FkUaFFUUo4kNtrjzk94')
