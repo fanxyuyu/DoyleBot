@@ -2,6 +2,8 @@ import discord
 import random
 import time
 import os
+from datetime import datetime #for datetime
+from pytz import timezone #for timezone
 from discord.ext import commands, tasks #import the commands from discord extension
 from itertools import cycle #import to create a cycle on bot status
 
@@ -162,5 +164,16 @@ async def leo(ctx):
 @client.command()
 async def willy(ctx):
     await ctx.send('Se não fosse pelo leo seria a maior revelação otaka do discord\nps: perdão pela bagunça no among us')
+
+
+#time italy
+@client.command()
+async def italy(ctx): #formerly printCurrentTime
+    fmt = "%H:%M:%S"
+    # Current time in UTC
+    now_utc = datetime.now(timezone('UTC'))
+    # Convert to Europe/Berlin time zone
+    now_berlin = now_utc.astimezone(timezone('Europe/Berlin'))
+    await ctx.send(f'{now_berlin.strftime(fmt)} (Italy)')
 
 client.run('NzU0MDQyNjgwNDEzMTI2ODA4.X1u--A.tyhgPrK7duNmyELhJZjImXXARJg')
