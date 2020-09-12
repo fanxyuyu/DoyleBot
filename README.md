@@ -14,3 +14,7 @@ Basic:
 Fun:
   - 8ball <question>: answer your question with a random phrase
   - names: shows a text with all names commands avaliable
+  - anime: shows a list with all anime commands
+ 
+Anime:
+  - senpai: makes a user notice you
