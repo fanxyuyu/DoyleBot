@@ -20,3 +20,4 @@ Anime:
   - anime: shows a list with all anime commands
   - senpai: makes a user notice you
   - hug: hugs another user
+  - kiss: kisses another user
