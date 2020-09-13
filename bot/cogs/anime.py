@@ -132,8 +132,8 @@ class anime(commands.Cog):
                 f'{ctx.author.mention} surprises {user.mention} with a kiss',
                 f'{ctx.author.mention} kisses {user.mention} and **5** others later',
                 f'{ctx.author.mention} kisses {user.mention} but regrets it later',
-                f'{ctx.author.mention} kisses {user.mention} but {user.name} regrets it later',
-                f'{ctx.author.mention} kisses {user.mention} and {user.name} fall in love']
+                f'{ctx.author.mention} kisses {user.mention} but **{user.name}** regrets it later',
+                f'{ctx.author.mention} kisses {user.mention} and **{user.name}** falls in love']
 
         embed = discord.Embed(description = f'{random.choice(kiss)}', colour = random.randint(0, 0xFFFFFF))
         embed.set_image(url=f'{random.choice(gifskiss)}')
@@ -144,45 +144,52 @@ class anime(commands.Cog):
     #slaps another user command
     @commands.command()
     async def slap(self, ctx, user: discord.Member = None):
+        await ctx.message.delete()
         if not user:
-            return await ctx.send(f"Correct use: !slap <@user>")
+            embed = discord.Embed(description = f"I'm... I'm sorry {ctx.author.mention} :( you made me do it", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://i.pinimg.com/originals/1c/8f/0f/1c8f0f43c75c11bf504b25340ddd912d.gif')
+            await ctx.send(embed=embed)
         if user.id == ctx.author.id:
-            embed = discord.Embed(description = f"I'm... I'm sorry **{ctx.author.name}** :( you made me do it", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"I'm... I'm sorry {ctx.author.mention} :( you made me do it", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://i.pinimg.com/originals/1c/8f/0f/1c8f0f43c75c11bf504b25340ddd912d.gif')
             await ctx.send(embed=embed)
             return #stops the command if self tag
         if user.id == self.client.user.id:
-            embed = discord.Embed(description = f"Why? Why do you want to hurt me **{ctx.author.name}**", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"Why? Why do you want to hurt me {ctx.author.mention}??", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://media.tenor.com/images/7e623e17dd8c776aee5e0c3e0e9534c9/tenor.gif')
             await ctx.send(embed=embed)
             return
         if user.bot:
-            embed = discord.Embed(description = f"Why **{ctx.author.name}**? Why did you did you hurt another bot? you monster", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"Why {ctx.author.mention}? Why did you did you hurt another bot? you monster", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://i.pinimg.com/originals/39/ec/67/39ec6796a4c1722c046cbb30eaf9e210.gif')
             await ctx.send(embed=embed)
             return
+
         #slaps gifs list
         gifslap = ['https://media0.giphy.com/media/Gf3AUz3eBNbTW/giphy.gif',
                 'https://i.pinimg.com/originals/b8/f3/02/b8f302e2fa5f45fa4d472a23d828568b.gif',
                 'https://media1.tenor.com/images/af36628688f5f50f297c5e4bce61a35c/tenor.gif',
-                'https://pa1.narvii.com/6807/b3b719851bc98fa5387ecf7447ed9ef4b77f4f5d_hq.gif',
-                'https://i.kym-cdn.com/photos/images/newsfeed/001/126/001/997.gif',
+                'https://cdn.weeb.sh/images/BJSpWec1M.gif',
+                'https://cdn.weeb.sh/images/HkHCm1twZ.gif',
                 'https://i.imgur.com/3rHE4Ee.gif',
-                'https://i.pinimg.com/originals/46/b0/a2/46b0a213e3ea1a9c6fcc060af6843a0e.gif',
+                'https://cdn.weeb.sh/images/Bkj-oaV0Z.gif',
                 'https://i.kym-cdn.com/photos/images/newsfeed/001/390/712/289.gif',
-                'https://i.kym-cdn.com/photos/images/newsfeed/000/846/661/240.gif']
+                'https://cdn.weeb.sh/images/SJlkNkFwb.gif',
+                'https://cdn.weeb.sh/images/ByHUMRNR-.gif',
+                'https://cdn.weeb.sh/images/SkSCyl5yz.gif',
+                'https://cdn.weeb.sh/images/Hk6JVkFPb.gif']
         #slaps phrases
-        slap = [f'**{ctx.author.name}** slaps **{user.name}**',
-                f'**{ctx.author.name}** slaps **{user.name}** with all her mighty',
-                f'**{ctx.author.name}** surprises **{user.name}** by slapping him',
-                f'**{ctx.author.name}** slaps **{user.name}** but **{user.name}** likes it',
-                f'**{ctx.author.name}** slapped **{user.name}** so hard that **{user.name}** ends up liking it',
-                f'**{ctx.author.name}** slaps **{user.name}** for no reason',
-                f'**{ctx.author.name}** slaps **{user.name}** because **{user.name}** was mean',
-                f'**{ctx.author.name}** slaps **{user.name}** but **{user.name}** take revenge later',
-                f'**{ctx.author.name}** slaps **{user.name}** but regrets it later']
+        slap = [f'{ctx.author.mention} slaps {user.mention}',
+                f'{ctx.author.mention} slaps {user.mention} with all her mighty',
+                f'{ctx.author.mention} surprises {user.mention} with a slap',
+                f'{ctx.author.mention} slaps {user.mention} but **{user.name}** likes it',
+                f'{ctx.author.mention} slapped {user.mention} so hard that **{user.name}** ends up liking it',
+                f'{ctx.author.mention} slaps {user.mention} for no reason',
+                f'{ctx.author.mention} slaps {user.mention} because **{user.name}** was mean',
+                f'{ctx.author.mention} slaps {user.mention} but **{user.name}** take revenge later',
+                f'{ctx.author.mention} slaps {user.mention} but regrets it later']
 
-        embed = discord.Embed(description = f'{random.choice(slap)}', colour = discord.Colour.blue())
+        embed = discord.Embed(description = f'{random.choice(slap)}', colour = random.randint(0, 0xFFFFFF))
         embed.set_image(url=f'{random.choice(gifslap)}')
         await ctx.send(embed=embed)
 
