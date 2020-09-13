@@ -1,6 +1,6 @@
 # Description
 Simple discord bot
- - **bot prefix: b.**
+ - **bot prefix: !**
 
 ## Commands: 
 **Admin:**
