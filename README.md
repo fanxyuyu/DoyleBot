@@ -21,7 +21,8 @@ Fun:
   - reverse: reverse a text
  
 Anime:
-  **interaction:**
+ 
+ **interaction:**
   - anime: shows a list with all anime commands
   - senpai: makes a user notice you
   - hug: hugs another user
