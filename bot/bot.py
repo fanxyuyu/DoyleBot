@@ -5,8 +5,8 @@ from itertools import cycle #import to create a cycle on bot status
 
 startup_extensions = ['cogs._8ball','cogs.anime','cogs.fun','cogs.help','cogs.names','cogs.time'] #starts defined cogs
 
-client = commands.Bot(command_prefix = 'b.')
-status = cycle(['type b.help', 'bot by: Lust#4444', 'type b.help', 'bot by: Lust#4444', 'I see you'])
+client = commands.Bot(command_prefix = '!')
+status = cycle(['use !help'])
 client.remove_command('help') #removes default help command
 
 #Load message
@@ -42,7 +42,7 @@ async def clear(ctx, amount: int):
 @clear.error
 async def clear_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send('Correct use: b.clear <qntd>')
+        await ctx.send('Correct use: !clear <qntd>')
         
 #load cogs
 if __name__ == "__main__":
