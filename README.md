@@ -5,7 +5,11 @@ Simple discord bot
 ## Commands: 
 Admin:
   - clear <quantity>: deletes an specific amount of messages
- 
+
+Text:
+  - say: sends a message as the bot
+  - embed: same as above but with embed
+  
 Basic:
   - Help: shows all commands
   - Ping: shows bot ping
