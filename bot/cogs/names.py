@@ -56,7 +56,7 @@ class names(commands.Cog):
     async def leo(self, ctx):
         await ctx.send('Ta tudo bem leo, o importante é ser feliz e não perfeito')
 
-    @commands.command()
+    @commands.command() 
     async def willy(self, ctx):
         await ctx.send('Se não fosse pelo leo seria a maior revelação otaka do discord\nps: perdão pela bagunça no among us')
 
