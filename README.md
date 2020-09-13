@@ -23,3 +23,4 @@ Anime:
   - kiss: kisses another user
   - slap: slaps another user
   - pat: pats another user
+*if you use any of those commands with this bot itself or another bot it shows unique responses
