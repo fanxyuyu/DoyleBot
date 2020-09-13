@@ -89,46 +89,52 @@ class anime(commands.Cog):
     #kiss another user command
     @commands.command()
     async def kiss(self, ctx, user: discord.Member = None):
+        await ctx.message.delete()
         if not user:
-            return await ctx.send(f"Correct use: !kiss <@user>")
+            await ctx.send(f'{ctx.author.mention} Y-you need to mention someone')
+            return
         if user.id == ctx.author.id:
-            embed = discord.Embed(description = f"Hey **{ctx.author.name}** you can't kiss yourself so take mine ><", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"{ctx.author.mention} you can't kiss yourself so here, take mine ♡", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://i.pinimg.com/originals/6a/46/8f/6a468f80cb1384d681440115d6e6d1b9.gif')
             await ctx.send(embed=embed)
-            return #stops the command if self tag
+            return
         if user.id == self.client.user.id:
-            embed = discord.Embed(description = f"DUMMY!! do~don't do that to me", colour = discord.Colour.blue())
-            embed.set_image(url='https://64.media.tumblr.com/5e65b659832b88544888f2cbffa607d5/tumblr_p1trnmsNYH1wn2b96o1_400.gifv')
+            embed = discord.Embed(description = f"DUMMY!! do~don't do that to me {ctx.author.mention}", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://i.pinimg.com/originals/b0/93/ec/b093ec61870988f4098dd8b7f1d1cec1.gif')
             await ctx.send(embed=embed)
             return
         if user.bot:
-            embed = discord.Embed(description = f"I get it **{ctx.author.name}**, you're fine with anyone as long as it's a bot right?", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"I get it {ctx.author.mention}, you're fine with anyone as long as it's a bot right?", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://i.pinimg.com/originals/07/77/44/07774417cc35d0727e4913a531cb851a.gif')
             await ctx.send(embed=embed)
             return
+
         #kiss gifs list
-        gifskiss = ['https://media1.tenor.com/images/f5167c56b1cca2814f9eca99c4f4fab8/tenor.gif',
-                'https://media1.tenor.com/images/621ceac89636fc46ecaf81824f9fee0e/tenor.gif',
+        gifskiss = ['https://media1.tenor.com/images/f5167c56b1cca2814f9eca99c4f4fab8/tenor.gif', #meh
+                'https://media1.tenor.com/images/621ceac89636fc46ecaf81824f9fee0e/tenor.gif', #meh
                 'https://media1.tenor.com/images/40711a5b00fcf9918ddef1aa483d993f/tenor.gif',
-                'https://media1.tenor.com/images/db79d17d7a5e08bf64e55a63eea5976f/tenor.gif',
+                'https://cdn.weeb.sh/images/rypMnpuvW.gif',
                 'https://media1.tenor.com/images/a0b68f4704f811bfcc517574425e96a5/tenor.gif',
-                'https://media1.tenor.com/images/0d70e1c91378712021717d2f6424fd07/tenor.gif',
+                'https://cdn.weeb.sh/images/B1MJ2aODb.gif',
                 'https://media1.tenor.com/images/37ceeaa82fb503fb10bbd539ad4e3fd8/tenor.gif',
                 'https://media1.tenor.com/images/3dc3bb6e35aa0d090527babe698bfe55/tenor.gif',
                 'https://media1.tenor.com/images/be905a75eb3036494fc32df12b7c1b7a/tenor.gif',
-                'https://media1.tenor.com/images/49811017ffb751e3c4228f68d55778e4/tenor.gif']
+                'https://cdn.weeb.sh/images/rJoL2pdvb.gif',
+                'https://cdn.weeb.sh/images/Sk1k3TdPW.gif',
+                'https://cdn.weeb.sh/images/ByiMna_vb.gif',
+                'https://cdn.weeb.sh/images/Sksk4l51z.gif']
         #kiss phrases
-        kiss = [f'**{ctx.author.name}** kisses **{user.name}**',
-                f'**{ctx.author.name}** kisses **{user.name}** all night long',
-                f'**{ctx.author.name}** forces a kiss on **{user.name}**',
-                f'**{ctx.author.name}** kisses **{user.name}** who loves it',
-                f'**{ctx.author.name}** surprises **{user.name}** with a kiss',
-                f'**{ctx.author.name}** kisses **{user.name}** and *5* others later',
-                f'**{ctx.author.name}** kisses **{user.name}** and regrets it later',
-                f'**{ctx.author.name}** kisses **{user.name}** but **{user.name}** regrets it later',
-                f'**{ctx.author.name}** kisses **{user.name}** and **{user.name}** fall in love']
+        kiss = [f'{ctx.author.mention} kisses {user.mention}',
+                f'{ctx.author.mention} just kissed {user.mention} all night long',
+                f'{ctx.author.mention} forces a kiss on {user.mention}',
+                f'{ctx.author.mention} kisses {user.mention} who loves it',
+                f'{ctx.author.mention} surprises {user.mention} with a kiss',
+                f'{ctx.author.mention} kisses {user.mention} and **5** others later',
+                f'{ctx.author.mention} kisses {user.mention} but regrets it later',
+                f'{ctx.author.mention} kisses {user.mention} but {user.name} regrets it later',
+                f'{ctx.author.mention} kisses {user.mention} and {user.name} fall in love']
 
-        embed = discord.Embed(description = f'{random.choice(kiss)}', colour = discord.Colour.blue())
+        embed = discord.Embed(description = f'{random.choice(kiss)}', colour = random.randint(0, 0xFFFFFF))
         embed.set_image(url=f'{random.choice(gifskiss)}')
         await ctx.send(embed=embed)
 
