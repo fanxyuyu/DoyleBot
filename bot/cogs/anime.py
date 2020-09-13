@@ -88,6 +88,7 @@ class anime(commands.Cog):
         
     #kiss another user command
     @commands.command()
+    @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def kiss(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
         if not user:
