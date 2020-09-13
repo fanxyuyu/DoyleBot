@@ -39,22 +39,22 @@ class anime(commands.Cog):
     async def hug(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
         if not user:
-            embed = discord.Embed(description = f"Here {ctx.author.mention} , I'll give you a hug ♡", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"Here {ctx.author.mention} , I'll give you a hug ♡", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://cdn.weeb.sh/images/Bkta0ExOf.gif')
             await ctx.send(embed=embed)
             return #stops the command if self tag
         if user.id == ctx.author.id:
-            embed = discord.Embed(description = f'{ctx.author.mention} is feeling really lonely and hugs a pillow', colour = discord.Colour.blue())
+            embed = discord.Embed(description = f'{ctx.author.mention} is feeling really lonely and hugs a pillow', colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://media1.tenor.com/images/1a0ac2f256d11e323ccad554de71f0cf/tenor.gif')
             await ctx.send(embed=embed)
             return #stops the command if self tag
         if user.id == self.client.user.id:
-            embed = discord.Embed(description = f"I... I was not expecting it... thanks {ctx.author.mention}", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"I... I was not expecting it... thanks {ctx.author.mention}", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://64.media.tumblr.com/f2a878657add13aa09a5e089378ec43d/tumblr_n5uovjOi931tp7433o1_500.gif')
             await ctx.send(embed=embed)
             return
         if user.bot:
-            embed = discord.Embed(description = f"HEY {ctx.author.mention}!! why are you trying to hug another bot?", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"HEY {ctx.author.mention}!! why are you trying to hug another bot?", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://i.pinimg.com/originals/27/16/68/271668b1037633d7f7ae63dc1a1c29f2.gif')
             await ctx.send(embed=embed)
             return
@@ -80,7 +80,7 @@ class anime(commands.Cog):
                 f'{ctx.author.mention} hugs {user.mention} to make him feel better',
                 f'{ctx.author.mention} surprises {user.mention} with a hug']
 
-        embed = discord.Embed(description = f'{random.choice(hugs)}', colour = discord.Colour.blue())
+        embed = discord.Embed(description = f'{random.choice(hugs)}', colour = random.randint(0, 0xFFFFFF))
         embed.set_image(url=f'{random.choice(gifshug)}')
         await ctx.send(embed=embed)
 
