@@ -35,7 +35,7 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandOnCooldown): #if command is on cooldown
         times = round(error.retry_after, 1)
         message = await ctx.send(f"{ctx.author.mention} you can use this command in `{times}` Seconds(s)")
-        time.sleep(3)
+        time.sleep(2)
         await message.delete()
         return
 
