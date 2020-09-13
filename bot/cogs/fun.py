@@ -9,7 +9,7 @@ class fun(commands.Cog):
 
     #say as the bot
     @commands.command() #use to set a list that can run a command
-    async def text(self, ctx, embtext): #you can't start a command with number
+    async def say(self, ctx, embtext): #you can't start a command with number
         await ctx.channel.purge(limit = 1)
         await ctx.send(f'{embtext}')
         return
