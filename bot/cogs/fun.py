@@ -9,16 +9,16 @@ class fun(commands.Cog):
 
     #say as the bot
     @commands.command() #use to set a list that can run a command
-    async def say(self, ctx, embtext): #you can't start a command with number
+    async def say(self, ctx, *, textt): #you can't start a command with number
         await ctx.channel.purge(limit = 1)
-        await ctx.send(f'{embtext}')
+        await ctx.send(f'{textt}')
         return
 
     #Embed text
     @commands.command() #use to set a list that can run a command
-    async def embed(self, ctx, embtext): #you can't start a command with number
+    async def embed(self, ctx, *, textts): #you can't start a command with number
         await ctx.channel.purge(limit = 1)
-        embed = discord.Embed(description = f"{embtext}", colour = discord.Colour.blue())
+        embed = discord.Embed(description = f"{textts}", colour = discord.Colour.blue())
         await ctx.send(embed=embed)
         return
 
