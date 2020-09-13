@@ -57,7 +57,7 @@ class anime(commands.Cog):
         embed.set_image(url=f'{random.choice(gifshug)}')
         await ctx.send(embed=embed)
 
-        
+
     #kiss another user command
     @commands.command()
     async def kiss(self, ctx, user: discord.Member = None):
@@ -96,6 +96,47 @@ class anime(commands.Cog):
         embed.set_image(url=f'{random.choice(gifskiss)}')
         await ctx.send(embed=embed)
 
-        
+
+    #slaps another user command
+    @commands.command()
+    async def slap(self, ctx, user: discord.Member = None):
+        if not user:
+            return await ctx.send(f"Correct use: b.slap <@user>")
+        if user.id == ctx.author.id:
+            embed = discord.Embed(description = f"I'm... I'm sorry **{ctx.author.name}** :( you made me do it", colour = discord.Colour.blue())
+            embed.set_image(url='https://i.pinimg.com/originals/1c/8f/0f/1c8f0f43c75c11bf504b25340ddd912d.gif')
+            await ctx.send(embed=embed)
+            return #stops the command if self tag
+        if user.bot:
+            embed = discord.Embed(description = f"Why? Why do you want to hurt me **{ctx.author.name}**", colour = discord.Colour.blue())
+            embed.set_image(url='https://media.tenor.com/images/7e623e17dd8c776aee5e0c3e0e9534c9/tenor.gif')
+            await ctx.send(embed=embed)
+            return
+        #slaps gifs list
+        gifslap = ['https://media0.giphy.com/media/Gf3AUz3eBNbTW/giphy.gif',
+                'https://i.pinimg.com/originals/b8/f3/02/b8f302e2fa5f45fa4d472a23d828568b.gif',
+                'https://media1.tenor.com/images/af36628688f5f50f297c5e4bce61a35c/tenor.gif',
+                'https://pa1.narvii.com/6807/b3b719851bc98fa5387ecf7447ed9ef4b77f4f5d_hq.gif',
+                'https://i.kym-cdn.com/photos/images/newsfeed/001/126/001/997.gif',
+                'https://i.imgur.com/3rHE4Ee.gif',
+                'https://i.pinimg.com/originals/46/b0/a2/46b0a213e3ea1a9c6fcc060af6843a0e.gif',
+                'https://i.kym-cdn.com/photos/images/newsfeed/001/390/712/289.gif',
+                'https://i.kym-cdn.com/photos/images/newsfeed/000/846/661/240.gif']
+        #slaps phrases
+        slap = [f'**{ctx.author.name}** slaps **{user.name}**',
+                f'**{ctx.author.name}** slaps **{user.name}** with all her mighty',
+                f'**{ctx.author.name}** surprises **{user.name}** by slapping him',
+                f'**{ctx.author.name}** slaps **{user.name}** but **{user.name}** likes it',
+                f'**{ctx.author.name}** slapped **{user.name}** so hard that **{user.name}** ends up liking it',
+                f'**{ctx.author.name}** slaps **{user.name}** for no reason',
+                f'**{ctx.author.name}** slaps **{user.name}** because **{user.name}** was mean',
+                f'**{ctx.author.name}** slaps **{user.name}** but **{user.name}** take revenge later',
+                f'**{ctx.author.name}** slaps **{user.name}** but regrets it later']
+
+        embed = discord.Embed(description = f'{random.choice(slap)}', colour = discord.Colour.blue())
+        embed.set_image(url=f'{random.choice(gifslap)}')
+        await ctx.send(embed=embed)
+
+
 def setup(client):
     client.add_cog(anime(client))
