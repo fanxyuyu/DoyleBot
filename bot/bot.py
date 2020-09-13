@@ -42,7 +42,7 @@ async def on_command_error(ctx, error):
 #clear <qnt> command -> defined to role named a
 @client.command()
 @commands.has_role('a')
-@commands.cooldown(1, 3.0, commands.BucketType.user)
+#@commands.cooldown(1, 3.0, commands.BucketType.user)
 async def clear(ctx, amount: int):
     await ctx.channel.purge(limit = amount + 1)
     message = await ctx.send(f'Total messages deleted: {amount}')
