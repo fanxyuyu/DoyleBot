@@ -143,6 +143,7 @@ class anime(commands.Cog):
 
     #slaps another user command
     @commands.command()
+    @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def slap(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
         if not user:
@@ -196,6 +197,7 @@ class anime(commands.Cog):
 
     #pats another user command
     @commands.command()
+    @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def pat(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
         if not user:
@@ -246,7 +248,6 @@ class anime(commands.Cog):
         embed = discord.Embed(description = f'{random.choice(pats)}', colour = random.randint(0, 0xFFFFFF))
         embed.set_image(url=f'{random.choice(gifspat)}')
         await ctx.send(embed=embed)
-
 
 
 def setup(client):
