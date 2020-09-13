@@ -251,5 +251,49 @@ class anime(commands.Cog):
         await ctx.send(embed=embed)
 
 
+
+    #kills another user command
+    @commands.command()
+    @commands.cooldown(1, 3.0, commands.BucketType.user)
+    async def kill(self, ctx, user: discord.Member = None):
+        await ctx.message.delete()
+        if not user:
+            await ctx.send(f"{ctx.author.mention} Y-you want to kill someone?? you'll have to mention them...")
+            return
+        if user.id == ctx.author.id:
+            embed = discord.Embed(description = f"Please don't kill yourself {ctx.author.mention}... I'll miss you...", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://data.whicdn.com/images/240443619/original.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.id == self.client.user.id:
+            embed = discord.Embed(description = f"I won't let you kill me {ctx.author.mention} I'll fight you", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://i.imgur.com/VAbxu4H.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.bot:
+            embed = discord.Embed(description = f"that's cute {ctx.author.mention}, but you can't kill a bot", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://data.whicdn.com/images/297349107/original.gif')
+            await ctx.send(embed=embed)
+            return
+
+        #kills gifs list
+        gifskill = ['https://i.imgur.com/St6brKP.gif',
+                'https://i.imgur.com/roweWUe.gif',
+                'https://i.imgur.com/ynyTOIB.gif',
+                'https://i.imgur.com/mRo4oFL.gif',
+                'https://i.imgur.com/CNX8gW8.gif']
+        #kill phrases
+        kills = [f'{ctx.author.mention} wants to kill {user.mention}',
+                f'{ctx.author.mention} just killed {user.mention}',
+                f'{ctx.author.mention} kills {user.mention} but regrets it later',
+                f'{ctx.author.mention} tries to kill {user.mention} but **{user.name}** survives',
+                f'{ctx.author.mention} killed {user.mention} and enjoyed it way too much',
+                f'{ctx.author.mention} kills {user.mention} for no reason']
+
+        embed = discord.Embed(description = f'{random.choice(kills)}', colour = random.randint(0, 0xFFFFFF))
+        embed.set_image(url=f'{random.choice(gifskill)}')
+        await ctx.send(embed=embed)
+
+
 def setup(client):
     client.add_cog(anime(client))
