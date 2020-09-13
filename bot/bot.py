@@ -34,7 +34,6 @@ async def on_command_error(ctx, error):
         await ctx.send('Invalid command.')
 
 #clear <qnt> command -> defined to role named a
-#clear <qnt> command -> defined to role named a
 @client.command()
 @commands.has_role('a')
 async def clear(ctx, amount: int):
