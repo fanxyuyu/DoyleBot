@@ -139,6 +139,7 @@ class anime(commands.Cog):
         embed.set_image(url=f'{random.choice(gifskiss)}')
         await ctx.send(embed=embed)
 
+        
 
     #slaps another user command
     @commands.command()
