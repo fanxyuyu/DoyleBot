@@ -242,7 +242,7 @@ class anime(commands.Cog):
                 f'{ctx.author.mention} pats {user.mention} but **{user.name}** gets tired after a while',
                 f'{ctx.author.mention} pats {user.mention} so hard that **{user.name}** ends up with a headache later',
                 f'{ctx.author.mention} pats {user.mention} for no reason',
-                f'{ctx.author.mention} hugs {user.mention} to make him feel better',
+                f'{ctx.author.mention} pats {user.mention} to make him feel better',
                 f'{ctx.author.mention} pats {user.mention} and **{user.name}** falls in love',
                 f'{ctx.author.mention} pats {user.mention} all night long']
 
