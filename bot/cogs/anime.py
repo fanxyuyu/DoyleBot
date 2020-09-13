@@ -295,5 +295,50 @@ class anime(commands.Cog):
         await ctx.send(embed=embed)
 
 
+    #licks another user command
+    @commands.command()
+    @commands.cooldown(1, 3.0, commands.BucketType.user)
+    async def lick(self, ctx, user: discord.Member = None):
+        await ctx.message.delete()
+        if not user:
+            embed = discord.Embed(description = f"WHA-WHAT? you want me to lick you {ctx.author.mention}?... pervert...", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://media3.giphy.com/media/93c09w31Ys65O/giphy.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.id == ctx.author.id:
+            embed = discord.Embed(description = f"WHA-WHAT? you want me to lick you {ctx.author.mention}?... pervert...", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://media3.giphy.com/media/93c09w31Ys65O/giphy.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.id == self.client.user.id:
+            embed = discord.Embed(description = f"do-don't lick me like that {ctx.author.mention}!", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://cdn.weeb.sh/images/Bkxge0uPW.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.bot:
+            embed = discord.Embed(description = f"get away from that bot {ctx.author.mention}, I won't let you lick it", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://i.pinimg.com/originals/b6/34/6c/b6346ce53c26db1b3f474da4a6e7ebe2.gif')
+            await ctx.send(embed=embed)
+            return
+
+        #lick gifs list
+        gifslick = ['https://cdn.weeb.sh/images/S1Ill0_vW.gif',
+                'https://cdn.weeb.sh/images/H1zlgRuvZ.gif',
+                'https://cdn.weeb.sh/images/Sk15iVlOf.gif',
+                'https://cdn.weeb.sh/images/rktygCOD-.gif',
+                'https://cdn.weeb.sh/images/rykRHmB6W.gif']
+        #lick phrases
+        licks = [f'{ctx.author.mention} licks {user.mention}',
+                f'{ctx.author.mention} licks {user.mention} and **{user.name}** likes it',
+                f'{ctx.author.mention} surprised {user.mention} with a lick',
+                f'{user.mention} tries to resit {ctx.author.mention} licks but with no succes',
+                f"{ctx.author.mention} starts to lick {user.mention} and can't stop",
+                f'{ctx.author.mention} licks {user.mention} surprising them']
+
+        embed = discord.Embed(description = f'{random.choice(licks)}', colour = random.randint(0, 0xFFFFFF))
+        embed.set_image(url=f'{random.choice(gifslick)}')
+        await ctx.send(embed=embed)
+
+
 def setup(client):
     client.add_cog(anime(client))
