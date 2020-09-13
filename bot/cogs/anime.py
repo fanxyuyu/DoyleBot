@@ -163,7 +163,7 @@ class anime(commands.Cog):
     @commands.command()
     async def pat(self, ctx, user: discord.Member = None):
         if not user:
-            return await ctx.send(f"Correct use: !pat <@user> ")
+            return await ctx.send(f"Correct use: !pat <@user>")
         if user.id == ctx.author.id:
             embed = discord.Embed(description = f"Okay **{ctx.author.name}** I'll pat you this time :two_hearts:", colour = discord.Colour.blue())
             embed.set_image(url='https://64.media.tumblr.com/tumblr_lmi2d8FjRV1qd6621.gif')
