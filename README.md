@@ -30,8 +30,12 @@ Simple discord bot
   - kiss: kisses another user
   - slap: slaps another user
   - pat: pats another user
+  - kill: kills another user
+  - lick: licks another user
+  - cuddle: cuddles with another user
+  - insult: insult another user
   
   Reaction
   - soon
 
-  *if you use any of the anime commands with this bot itself or another bot it shows unique responses*
+  *all interactions hava unique responses using it on the main bot and on another bot*
