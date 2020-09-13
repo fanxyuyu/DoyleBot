@@ -42,12 +42,12 @@ class anime(commands.Cog):
             embed = discord.Embed(description = f"Here {ctx.author.mention} , I'll give you a hug ♡", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://cdn.weeb.sh/images/Bkta0ExOf.gif')
             await ctx.send(embed=embed)
-            return #stops the command if self tag
+            return
         if user.id == ctx.author.id:
             embed = discord.Embed(description = f'{ctx.author.mention} is feeling really lonely and hugs a pillow', colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://media1.tenor.com/images/1a0ac2f256d11e323ccad554de71f0cf/tenor.gif')
             await ctx.send(embed=embed)
-            return #stops the command if self tag
+            return
         if user.id == self.client.user.id:
             embed = discord.Embed(description = f"I... I was not expecting it... thanks {ctx.author.mention}", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://64.media.tumblr.com/f2a878657add13aa09a5e089378ec43d/tumblr_n5uovjOi931tp7433o1_500.gif')
@@ -153,7 +153,7 @@ class anime(commands.Cog):
             embed = discord.Embed(description = f"I'm... I'm sorry {ctx.author.mention} :( you made me do it", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://i.pinimg.com/originals/1c/8f/0f/1c8f0f43c75c11bf504b25340ddd912d.gif')
             await ctx.send(embed=embed)
-            return #stops the command if self tag
+            return
         if user.id == self.client.user.id:
             embed = discord.Embed(description = f"Why? Why do you want to hurt me {ctx.author.mention}??", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://media.tenor.com/images/7e623e17dd8c776aee5e0c3e0e9534c9/tenor.gif')
@@ -197,23 +197,28 @@ class anime(commands.Cog):
     #pats another user command
     @commands.command()
     async def pat(self, ctx, user: discord.Member = None):
+        await ctx.message.delete()
         if not user:
-            return await ctx.send(f"Correct use: !pat <@user>")
-        if user.id == ctx.author.id:
-            embed = discord.Embed(description = f"Okay **{ctx.author.name}** I'll pat you this time :two_hearts:", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"Okay {ctx.author.mention} I'll pat you this time ♡", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://64.media.tumblr.com/tumblr_lmi2d8FjRV1qd6621.gif')
             await ctx.send(embed=embed)
-            return #stops the command if self tag
+            return
+        if user.id == ctx.author.id:
+            embed = discord.Embed(description = f"Okay {ctx.author.mention} I'll pat you this time ♡", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://64.media.tumblr.com/tumblr_lmi2d8FjRV1qd6621.gif')
+            await ctx.send(embed=embed)
+            return
         if user.id == self.client.user.id:
-            embed = discord.Embed(description = f"thanks for pating me **{ctx.author.name}** ^^ I like you a little bit more now", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"thanks for pating me {ctx.author.mention} ^^ I like you a little bit more now", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://i.pinimg.com/originals/8b/42/6c/8b426c9bedc37054cd7e73925fa10da5.gif')
             await ctx.send(embed=embed)
             return
         if user.bot:
-            embed = discord.Embed(description = f"get out **{ctx.author.name}**, you're not allowed to touch this bot", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"get out {ctx.author.mention}, you're not allowed to touch this bot", colour = random.randint(0, 0xFFFFFF))
             embed.set_image(url='https://i.imgur.com/v44ViSk.gif')
             await ctx.send(embed=embed)
             return
+        
         #slaps gifs list
         gifspat = ['https://i.imgur.com/4ssddEQ.gif',
                 'https://i.pinimg.com/originals/70/96/0e/70960e87fb9454df6a1d15c96c9ad955.gif',
