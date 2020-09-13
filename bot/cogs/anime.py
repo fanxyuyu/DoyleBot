@@ -138,5 +138,46 @@ class anime(commands.Cog):
         await ctx.send(embed=embed)
 
 
+    #pats another user command
+    @commands.command()
+    async def pat(self, ctx, user: discord.Member = None):
+        if not user:
+            return await ctx.send(f"Correct use: b.pat <@user>")
+        if user.id == ctx.author.id:
+            embed = discord.Embed(description = f"Okay **{ctx.author.name}** I'll pat you this time :two_hearts:", colour = discord.Colour.blue())
+            embed.set_image(url='https://64.media.tumblr.com/tumblr_lmi2d8FjRV1qd6621.gif')
+            await ctx.send(embed=embed)
+            return #stops the command if self tag
+        if user.bot:
+            embed = discord.Embed(description = f"thanks **{ctx.author.name}** for pating me ^^ I like you a little bit more now", colour = discord.Colour.blue())
+            embed.set_image(url='https://i.pinimg.com/originals/8b/42/6c/8b426c9bedc37054cd7e73925fa10da5.gif')
+            await ctx.send(embed=embed)
+            return
+        #slaps gifs list
+        gifspat = ['https://i.imgur.com/4ssddEQ.gif',
+                'https://i.pinimg.com/originals/70/96/0e/70960e87fb9454df6a1d15c96c9ad955.gif',
+                'https://thumbs.gfycat.com/NauticalDampJerboa-max-1mb.gif',
+                'https://giffiles.alphacoders.com/184/184069.gif',
+                'https://i.imgur.com/wz8ilbW.gif',
+                'https://thumbs.gfycat.com/CaringInfiniteFirebelliedtoad-size_restricted.gif',
+                'https://pa1.narvii.com/6523/b7ef2fa2dc1ba00f7d6c1e0ff1301cf62fe36e2c_hq.gif',
+                'https://data.whicdn.com/images/134027062/original.gif',
+                'https://media1.tenor.com/images/2cf1704769d0227c69ebc4b6c85e274b/tenor.gif']
+        #slaps phrases
+        pats = [f'**{ctx.author.name}** pats **{user.name}**',
+                f'**{ctx.author.name}** pats **{user.name}** and **{user.name}** likes it',
+                f'**{ctx.author.name}** surprises **{user.name}** by patting him',
+                f'**{ctx.author.name}** pats **{user.name}** but **{user.name}** gets tired after a while',
+                f'**{ctx.author.name}** pats **{user.name}** so hard that **{user.name}** ends up with a headache later',
+                f'**{ctx.author.name}** pats **{user.name}** for no reason',
+                f'**{ctx.author.name}** hugs **{user.name}** to make him feel better',
+                f'**{ctx.author.name}** pats **{user.name}** and **{user.name}** falls in love',
+                f'**{ctx.author.name}** pats **{user.name}** all night long']
+
+        embed = discord.Embed(description = f'{random.choice(pats)}', colour = discord.Colour.blue())
+        embed.set_image(url=f'{random.choice(gifspat)}')
+        await ctx.send(embed=embed)
+
+
 def setup(client):
     client.add_cog(anime(client))
