@@ -218,8 +218,8 @@ class anime(commands.Cog):
             embed.set_image(url='https://i.imgur.com/v44ViSk.gif')
             await ctx.send(embed=embed)
             return
-        
-        #slaps gifs list
+
+        #pats gifs list
         gifspat = ['https://i.imgur.com/4ssddEQ.gif',
                 'https://i.pinimg.com/originals/70/96/0e/70960e87fb9454df6a1d15c96c9ad955.gif',
                 'https://thumbs.gfycat.com/NauticalDampJerboa-max-1mb.gif',
@@ -227,22 +227,26 @@ class anime(commands.Cog):
                 'https://i.imgur.com/wz8ilbW.gif',
                 'https://thumbs.gfycat.com/CaringInfiniteFirebelliedtoad-size_restricted.gif',
                 'https://pa1.narvii.com/6523/b7ef2fa2dc1ba00f7d6c1e0ff1301cf62fe36e2c_hq.gif',
-                'https://data.whicdn.com/images/134027062/original.gif',
+                'https://cdn.weeb.sh/images/rytzGAE0W.gif',
+                'https://cdn.weeb.sh/images/HyWlxJFvb.gif',
+                'https://cdn.weeb.sh/images/BJnD9a4Rb.gif',
+                'https://cdn.weeb.sh/images/H1XkAyYNM.gif',
                 'https://media1.tenor.com/images/2cf1704769d0227c69ebc4b6c85e274b/tenor.gif']
-        #slaps phrases
-        pats = [f'**{ctx.author.name}** pats **{user.name}**',
-                f'**{ctx.author.name}** pats **{user.name}** and **{user.name}** likes it',
-                f'**{ctx.author.name}** surprises **{user.name}** by patting him',
-                f'**{ctx.author.name}** pats **{user.name}** but **{user.name}** gets tired after a while',
-                f'**{ctx.author.name}** pats **{user.name}** so hard that **{user.name}** ends up with a headache later',
-                f'**{ctx.author.name}** pats **{user.name}** for no reason',
-                f'**{ctx.author.name}** hugs **{user.name}** to make him feel better',
-                f'**{ctx.author.name}** pats **{user.name}** and **{user.name}** falls in love',
-                f'**{ctx.author.name}** pats **{user.name}** all night long']
+        #pats phrases
+        pats = [f'{ctx.author.mention} pats {user.mention}',
+                f'{ctx.author.mention} pats {user.mention} and **{user.name}** likes it',
+                f'{ctx.author.mention} surprises {user.mention} by patting them',
+                f'{ctx.author.mention} pats {user.mention} but **{user.name}** gets tired after a while',
+                f'{ctx.author.mention} pats {user.mention} so hard that **{user.name}** ends up with a headache later',
+                f'{ctx.author.mention} pats {user.mention} for no reason',
+                f'{ctx.author.mention} hugs {user.mention} to make him feel better',
+                f'{ctx.author.mention} pats {user.mention} and **{user.name}** falls in love',
+                f'{ctx.author.mention} pats {user.mention} all night long']
 
-        embed = discord.Embed(description = f'{random.choice(pats)}', colour = discord.Colour.blue())
+        embed = discord.Embed(description = f'{random.choice(pats)}', colour = random.randint(0, 0xFFFFFF))
         embed.set_image(url=f'{random.choice(gifspat)}')
         await ctx.send(embed=embed)
+
 
 
 def setup(client):
