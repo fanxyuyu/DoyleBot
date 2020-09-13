@@ -10,62 +10,82 @@ class anime(commands.Cog):
 
     #simple notice me senpai command with a gif
     @commands.command(aliases=['noticemesenpai', 'senpai'])
+    @commands.cooldown(1, 4.0, commands.BucketType.user)
     async def noticeme(self, ctx, user: discord.Member = None):
+        await ctx.message.delete()
         if not user: #exclude with there's no argument
-            return await ctx.send(f"Correct use: !senpai <@user>")
+            embed = discord.Embed(description = f"Of course I'll notice you {ctx.author.mention} ʕ•ᴥ•ʔﾉ♡", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://media1.tenor.com/images/865132c2b61df5e4a2a04ee0d7de686c/tenor.gif')
+            return await ctx.send(embed=embed)
         if user.id == ctx.author.id: #check if the user taged himself
-            return await ctx.send(f"Are you that needy? you can't notice yourself!")
+            embed = discord.Embed(description = f"Of course I'll notice you {ctx.author.mention} ʕ•ᴥ•ʔﾉ♡", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://media1.tenor.com/images/865132c2b61df5e4a2a04ee0d7de686c/tenor.gif')
+            return await ctx.send(embed=embed)
+        if user.id == self.client.user.id:
+            embed = discord.Embed(description = f"Finally someone noticed me, {ctx.author.mention} you're my senpai now!", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://media1.tenor.com/images/bd39500869eeedd72d94274282fd14f2/tenor.gif')
+            return await ctx.send(embed=embed)
         if user.bot: #check if it taged a bot
-            return await ctx.send(f"Unfortunately **{user.name}** is a bot so I don't think it can notice you :(")
-        embed = discord.Embed(description = f'Hey **{user.name}**, **{ctx.author.name}** wants you to notice him!', colour = discord.Colour.blue())
+            return await ctx.send(f"Unfortunately **{user.mention}** is a bot so I don't think it can notice you :(")
+        embed = discord.Embed(description = f'Hey {user.mention} please notice {ctx.author.mention}!!', colour = random.randint(0, 0xFFFFFF))
         embed.set_image(url='https://i.alexflipnote.dev/500ce4.gif')
         await ctx.send(embed=embed)
 
+        
 
     #hug another user command
     @commands.command()
+    @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def hug(self, ctx, user: discord.Member = None):
+        await ctx.message.delete()
         if not user:
-            return await ctx.send(f"Correct use: !hug <@user>")
+            embed = discord.Embed(description = f"Here {ctx.author.mention} , I'll give you a hug ♡", colour = discord.Colour.blue())
+            embed.set_image(url='https://cdn.weeb.sh/images/Bkta0ExOf.gif')
+            await ctx.send(embed=embed)
+            return #stops the command if self tag
         if user.id == ctx.author.id:
-            embed = discord.Embed(description = f'**{ctx.author.name}** is feeling really lonely and hugs a pillow', colour = discord.Colour.blue())
+            embed = discord.Embed(description = f'{ctx.author.mention} is feeling really lonely and hugs a pillow', colour = discord.Colour.blue())
             embed.set_image(url='https://media1.tenor.com/images/1a0ac2f256d11e323ccad554de71f0cf/tenor.gif')
             await ctx.send(embed=embed)
             return #stops the command if self tag
         if user.id == self.client.user.id:
-            embed = discord.Embed(description = f"I... I was not expecting it... thanks **{ctx.author.name}**", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"I... I was not expecting it... thanks {ctx.author.mention}", colour = discord.Colour.blue())
             embed.set_image(url='https://64.media.tumblr.com/f2a878657add13aa09a5e089378ec43d/tumblr_n5uovjOi931tp7433o1_500.gif')
             await ctx.send(embed=embed)
             return
         if user.bot:
-            embed = discord.Embed(description = f"HEY!! why are you trying to hug another bot?", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"HEY {ctx.author.mention}!! why are you trying to hug another bot?", colour = discord.Colour.blue())
             embed.set_image(url='https://i.pinimg.com/originals/27/16/68/271668b1037633d7f7ae63dc1a1c29f2.gif')
             await ctx.send(embed=embed)
             return
+
         #hugs gifs list
         gifshug = ['https://media1.tenor.com/images/506aa95bbb0a71351bcaa753eaa2a45c/tenor.gif',
-                'https://media1.tenor.com/images/85dcef131af84b515106955e142df54e/tenor.gif',
-                'https://media1.tenor.com/images/f5df55943b64922b6b16aa63d43243a6/tenor.gif',
-                'https://media1.tenor.com/images/bb841fad2c0e549c38d8ae15f4ef1209/tenor.gif',
+                'https://cdn.weeb.sh/images/Hyv6uOQPZ.gif',
+                'https://cdn.weeb.sh/images/Hyv6uOQPZ.gif',
+                'https://cdn.weeb.sh/images/Sk80wyhqz.gif',
                 'https://media1.tenor.com/images/e9d7da26f8b2adbb8aa99cfd48c58c3e/tenor.gif',
-                'https://media1.tenor.com/images/460c80d4423b0ba75ed9592b05599592/tenor.gif',
+                'https://media1.tenor.com/images/460c80d4423b0ba75ed9592b05599592/tenor.gif', #meh?
                 'https://media1.tenor.com/images/7d6a56988dc7e6152ca578b7a1f24be9/tenor.gif',
                 'https://media1.tenor.com/images/79aa56112b2d0eca4f50e9df188e18ad/tenor.gif',
-                'https://media1.tenor.com/images/94c44a9898927f22dff399c2c248f433/tenor.gif',
-                'https://media1.tenor.com/images/49a21e182fcdfb3e96cc9d9421f8ee3f/tenor.gif']
+                'https://cdn.weeb.sh/images/B11CDkhqM.gif',
+                'https://media1.tenor.com/images/49a21e182fcdfb3e96cc9d9421f8ee3f/tenor.gif',
+                'https://cdn.weeb.sh/images/H1X6OOmPW.gif',
+                'https://cdn.weeb.sh/images/HJ7lY_QwW.gif']
         #hugs phrases
-        hugs = [f'**{ctx.author.name}** hugs tightly **{user.name}**',
-                f'**{ctx.author.name}** hugs **{user.name}** with love',
-                f'**{ctx.author.name}** forces **{user.name}** to a hug',
-                f'**{ctx.author.name}** hugs **{user.name}** to make him feel better',
-                f'**{ctx.author.name}** surprises **{user.name}** with a hug',
-                f'**{ctx.author.name}** hugs **{user.name}**']
+        hugs = [f'{ctx.author.mention} hugs tightly {user.mention}',
+                f'{ctx.author.mention} hugs {user.mention}',
+                f'{ctx.author.mention} hugs {user.mention} with love',
+                f'{ctx.author.mention} forces {user.mention} to a hug',
+                f'{ctx.author.mention} hugs {user.mention} to make him feel better',
+                f'{ctx.author.mention} surprises {user.mention} with a hug']
 
         embed = discord.Embed(description = f'{random.choice(hugs)}', colour = discord.Colour.blue())
         embed.set_image(url=f'{random.choice(gifshug)}')
         await ctx.send(embed=embed)
 
 
+        
     #kiss another user command
     @commands.command()
     async def kiss(self, ctx, user: discord.Member = None):
