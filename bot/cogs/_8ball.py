@@ -8,7 +8,8 @@ class _8ball(commands.Cog):
         self.client = client
 
     @commands.command(aliases=['8ball', '8']) #use to set a list that can run a command
-    async def _8ball(self, ctx, *, question): #you can't start a command with number
+    @commands.cooldown(1, 3.0, commands.BucketType.user)
+    async def ball(self, ctx, *, question): #you can't start a command with number
         responses = ['Com certeza!',
                     'Não sei, pergunta pro leo.',
                     'Que tipo de pergunta é essa?',
@@ -39,6 +40,11 @@ class _8ball(commands.Cog):
                     'pergunta pro cat, ele sabe a resposta certa',
                     'O importante é ser feliz e não perfeito']
         await ctx.send(f'Pergunta: {question}\nResposta: {random.choice(responses)}')
+
+    @ball.error
+    async def ball_error(self, ctx, error):
+        if isinstance(error, commands.MissingRequiredArgument):
+            await ctx.send("Correct use: !8ball <question>")
 
 def setup(client):
     client.add_cog(_8ball(client))
