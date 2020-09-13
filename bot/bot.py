@@ -1,5 +1,7 @@
 import discord
 import os #to use cogs
+import time #to use time.sleep
+import asyncio #to delete message
 from discord.ext import commands, tasks
 from itertools import cycle #import to create a cycle on bot status
 
@@ -32,13 +34,14 @@ async def on_command_error(ctx, error):
         await ctx.send('Invalid command.')
 
 #clear <qnt> command -> defined to role named a
+#clear <qnt> command -> defined to role named a
 @client.command()
 @commands.has_role('a')
 async def clear(ctx, amount: int):
     await ctx.channel.purge(limit = amount + 1)
-    await ctx.send(f'Total messages deleted: {amount}')
+    message = await ctx.send(f'Total messages deleted: {amount}')
     time.sleep(3)
-    await ctx.channel.purge(limit = 1)
+    await message.delete()
 @clear.error
 async def clear_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
