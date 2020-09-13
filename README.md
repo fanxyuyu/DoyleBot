@@ -4,7 +4,7 @@ Simple discord bot
 
 ## Commands: 
 Admin:
-  - clear <quantity>: delete specific amount of messages
+  - clear <quantity>: delete a specific amount of messages
  
 Basic:
   - Help: shows all commands
