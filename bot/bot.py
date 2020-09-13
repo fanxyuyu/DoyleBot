@@ -27,15 +27,22 @@ async def change_status():
 async def ping(ctx): #parameter
     await ctx.send(f'`Ping: {round (client.latency * 1000)} ms`')
 
-#command error (if command does not exist)
+#command error
 @client.event
 async def on_command_error(ctx, error):
-    if isinstance(error, commands.CommandNotFound):
+    if isinstance(error, commands.CommandNotFound): #if command does not exist
         await ctx.send('Invalid command.')
+    if isinstance(error, commands.CommandOnCooldown): #if command is on cooldown
+        times = round(error.retry_after, 1)
+        message = await ctx.send(f"{ctx.author.mention} you can use this command in `{times}` Seconds(s)")
+        time.sleep(3)
+        await message.delete()
+        return
 
 #clear <qnt> command -> defined to role named a
 @client.command()
 @commands.has_role('a')
+@commands.cooldown(1, 3.0, commands.BucketType.user)
 async def clear(ctx, amount: int):
     await ctx.channel.purge(limit = amount + 1)
     message = await ctx.send(f'Total messages deleted: {amount}')
