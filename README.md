@@ -21,3 +21,4 @@ Anime:
   - senpai: makes a user notice you
   - hug: hugs another user
   - kiss: kisses another user
+  - slap: slaps another user
