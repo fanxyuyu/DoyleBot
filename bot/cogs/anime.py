@@ -32,8 +32,16 @@ class anime(commands.Cog):
             embed.set_image(url='https://media1.tenor.com/images/1a0ac2f256d11e323ccad554de71f0cf/tenor.gif')
             await ctx.send(embed=embed)
             return #stops the command if self tag
+        if user.id == self.client.user.id:
+            embed = discord.Embed(description = f"I... I was not expecting it... thanks **{ctx.author.name}**", colour = discord.Colour.blue())
+            embed.set_image(url='https://64.media.tumblr.com/f2a878657add13aa09a5e089378ec43d/tumblr_n5uovjOi931tp7433o1_500.gif')
+            await ctx.send(embed=embed)
+            return
         if user.bot:
-            return await ctx.send(f"Unfortunately **{user.name}** is a bot but thanks for the hug :heart_exclamation:")
+            embed = discord.Embed(description = f"HEY!! why are you trying to hug another bot?", colour = discord.Colour.blue())
+            embed.set_image(url='https://i.pinimg.com/originals/27/16/68/271668b1037633d7f7ae63dc1a1c29f2.gif')
+            await ctx.send(embed=embed)
+            return
         #hugs gifs list
         gifshug = ['https://media1.tenor.com/images/506aa95bbb0a71351bcaa753eaa2a45c/tenor.gif',
                 'https://media1.tenor.com/images/85dcef131af84b515106955e142df54e/tenor.gif',
@@ -68,8 +76,16 @@ class anime(commands.Cog):
             embed.set_image(url='https://i.pinimg.com/originals/6a/46/8f/6a468f80cb1384d681440115d6e6d1b9.gif')
             await ctx.send(embed=embed)
             return #stops the command if self tag
+        if user.id == self.client.user.id:
+            embed = discord.Embed(description = f"DUMMY!! do~don't do that to me", colour = discord.Colour.blue())
+            embed.set_image(url='https://64.media.tumblr.com/5e65b659832b88544888f2cbffa607d5/tumblr_p1trnmsNYH1wn2b96o1_400.gifv')
+            await ctx.send(embed=embed)
+            return
         if user.bot:
-            return await ctx.send(f"thanks... **{user.name}** :flushed:")
+            embed = discord.Embed(description = f"I get it **{ctx.author.name}**, you're fine with anyone as long as it's a bot right?", colour = discord.Colour.blue())
+            embed.set_image(url='https://i.pinimg.com/originals/07/77/44/07774417cc35d0727e4913a531cb851a.gif')
+            await ctx.send(embed=embed)
+            return
         #kiss gifs list
         gifskiss = ['https://media1.tenor.com/images/f5167c56b1cca2814f9eca99c4f4fab8/tenor.gif',
                 'https://media1.tenor.com/images/621ceac89636fc46ecaf81824f9fee0e/tenor.gif',
@@ -107,9 +123,14 @@ class anime(commands.Cog):
             embed.set_image(url='https://i.pinimg.com/originals/1c/8f/0f/1c8f0f43c75c11bf504b25340ddd912d.gif')
             await ctx.send(embed=embed)
             return #stops the command if self tag
-        if user.bot:
+        if user.id == self.client.user.id:
             embed = discord.Embed(description = f"Why? Why do you want to hurt me **{ctx.author.name}**", colour = discord.Colour.blue())
             embed.set_image(url='https://media.tenor.com/images/7e623e17dd8c776aee5e0c3e0e9534c9/tenor.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.bot:
+            embed = discord.Embed(description = f"Why **{ctx.author.name}**? Why did you did you hurt another bot? you monster", colour = discord.Colour.blue())
+            embed.set_image(url='https://i.pinimg.com/originals/39/ec/67/39ec6796a4c1722c046cbb30eaf9e210.gif')
             await ctx.send(embed=embed)
             return
         #slaps gifs list
@@ -148,9 +169,14 @@ class anime(commands.Cog):
             embed.set_image(url='https://64.media.tumblr.com/tumblr_lmi2d8FjRV1qd6621.gif')
             await ctx.send(embed=embed)
             return #stops the command if self tag
-        if user.bot:
+        if user.id == self.client.user.id:
             embed = discord.Embed(description = f"thanks **{ctx.author.name}** for pating me ^^ I like you a little bit more now", colour = discord.Colour.blue())
             embed.set_image(url='https://i.pinimg.com/originals/8b/42/6c/8b426c9bedc37054cd7e73925fa10da5.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.bot:
+            embed = discord.Embed(description = f"get out **{ctx.author.name}**, you're not allowed to touch this bot", colour = discord.Colour.blue())
+            embed.set_image(url='https://i.imgur.com/v44ViSk.gif')
             await ctx.send(embed=embed)
             return
         #slaps gifs list
