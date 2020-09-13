@@ -12,7 +12,7 @@ class anime(commands.Cog):
     @commands.command(aliases=['noticemesenpai', 'senpai'])
     async def noticeme(self, ctx, user: discord.Member = None):
         if not user: #exclude with there's no argument
-            return await ctx.send(f"Correct use: b.senpai <@user>")
+            return await ctx.send(f"Correct use: !senpai <@user>")
         if user.id == ctx.author.id: #check if the user taged himself
             return await ctx.send(f"Are you that needy? you can't notice yourself!")
         if user.bot: #check if it taged a bot
@@ -26,7 +26,7 @@ class anime(commands.Cog):
     @commands.command()
     async def hug(self, ctx, user: discord.Member = None):
         if not user:
-            return await ctx.send(f"Correct use: b.hug <@user>")
+            return await ctx.send(f"Correct use: !hug <@user>")
         if user.id == ctx.author.id:
             embed = discord.Embed(description = f'**{ctx.author.name}** is feeling really lonely and hugs a pillow', colour = discord.Colour.blue())
             embed.set_image(url='https://media1.tenor.com/images/1a0ac2f256d11e323ccad554de71f0cf/tenor.gif')
@@ -70,7 +70,7 @@ class anime(commands.Cog):
     @commands.command()
     async def kiss(self, ctx, user: discord.Member = None):
         if not user:
-            return await ctx.send(f"Correct use: b.kiss <@user>")
+            return await ctx.send(f"Correct use: !kiss <@user>")
         if user.id == ctx.author.id:
             embed = discord.Embed(description = f"Hey **{ctx.author.name}** you can't kiss yourself so take mine ><", colour = discord.Colour.blue())
             embed.set_image(url='https://i.pinimg.com/originals/6a/46/8f/6a468f80cb1384d681440115d6e6d1b9.gif')
@@ -117,7 +117,7 @@ class anime(commands.Cog):
     @commands.command()
     async def slap(self, ctx, user: discord.Member = None):
         if not user:
-            return await ctx.send(f"Correct use: b.slap <@user>")
+            return await ctx.send(f"Correct use: !slap <@user>")
         if user.id == ctx.author.id:
             embed = discord.Embed(description = f"I'm... I'm sorry **{ctx.author.name}** :( you made me do it", colour = discord.Colour.blue())
             embed.set_image(url='https://i.pinimg.com/originals/1c/8f/0f/1c8f0f43c75c11bf504b25340ddd912d.gif')
@@ -163,7 +163,7 @@ class anime(commands.Cog):
     @commands.command()
     async def pat(self, ctx, user: discord.Member = None):
         if not user:
-            return await ctx.send(f"Correct use: b.pat <@user>")
+            return await ctx.send(f"Correct use: !pat <@user>")
         if user.id == ctx.author.id:
             embed = discord.Embed(description = f"Okay **{ctx.author.name}** I'll pat you this time :two_hearts:", colour = discord.Colour.blue())
             embed.set_image(url='https://64.media.tumblr.com/tumblr_lmi2d8FjRV1qd6621.gif')
