@@ -44,7 +44,7 @@ class _8ball(commands.Cog):
     @ball.error
     async def ball_error(self, ctx, error):
         if isinstance(error, commands.MissingRequiredArgument):
-            await ctx.send("Correct use: !8ball <question>")
+            await ctx.send("Correct use: !8ball <question> or !8 <question>")
 
 def setup(client):
     client.add_cog(_8ball(client))
