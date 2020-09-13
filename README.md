@@ -22,3 +22,4 @@ Anime:
   - hug: hugs another user
   - kiss: kisses another user
   - slap: slaps another user
+  - pat: pats another user
