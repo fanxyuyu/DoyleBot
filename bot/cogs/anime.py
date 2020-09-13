@@ -170,7 +170,7 @@ class anime(commands.Cog):
             await ctx.send(embed=embed)
             return #stops the command if self tag
         if user.id == self.client.user.id:
-            embed = discord.Embed(description = f"thanks **{ctx.author.name}** for pating me ^^ I like you a little bit more now", colour = discord.Colour.blue())
+            embed = discord.Embed(description = f"thanks for pating me **{ctx.author.name}** ^^ I like you a little bit more now", colour = discord.Colour.blue())
             embed.set_image(url='https://i.pinimg.com/originals/8b/42/6c/8b426c9bedc37054cd7e73925fa10da5.gif')
             await ctx.send(embed=embed)
             return
