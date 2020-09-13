@@ -17,7 +17,7 @@ class help(commands.Cog):
         #embed.set_thumbnail(url='https://i.ibb.co/S7mKyfQ/123.jpg')
         embed.set_image(url='https://i.ibb.co/S7mKyfQ/123.jpg')
         embed.add_field(name='Admin/Fun', value='clear (A)\n8ball\nnames\nreverse')
-        embed.add_field(name='Anime', value='anime\nsenpai\nhug\nkiss\nslap')
+        embed.add_field(name='Anime', value='anime\nsenpai\nhug\nkiss\nslap\npat')
         embed.add_field(name='Basic', value='help\nping\nitaly')
         await ctx.send(embed=embed)
 
@@ -32,7 +32,7 @@ class help(commands.Cog):
     @commands.command()
     async def anime(self, ctx):
         embed = discord.Embed(colour = discord.Colour.blue())
-        embed.add_field(name='Commands', value='**senpai:** *<@user>* notice me!\n**hug:** *<@user>* hugs someone\n**kiss:** *<@user>* kisses someone\n**slap:** *<@user>* slaps someone', inline=False)
+        embed.add_field(name='Commands', value='**senpai:** *<@user>* notice me!\n**hug:** *<@user>* hugs someone\n**kiss:** *<@user>* kisses someone\n**slap:** *<@user>* slaps someone\n**pat:** *<@user>* pats someone', inline=False)
         await ctx.send(embed=embed)
 
 def setup(client):
