@@ -22,7 +22,7 @@ class fun(commands.Cog):
         await ctx.send(embed=embed)
         return
 
-    #reverses the text
+    #reverses the text 
     @commands.command()
     async def reverse(self, ctx, *, text: str):
         t_rev = text[::-1].replace("@", "@\u200B").replace("&", "&\u200B")
