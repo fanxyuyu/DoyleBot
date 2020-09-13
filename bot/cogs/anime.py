@@ -340,5 +340,102 @@ class anime(commands.Cog):
         await ctx.send(embed=embed)
 
 
+
+    #cuddle with another user command
+    @commands.command()
+    @commands.cooldown(1, 3.0, commands.BucketType.user)
+    async def cuddle(self, ctx, user: discord.Member = None):
+        await ctx.message.delete()
+        if not user:
+            embed = discord.Embed(description = f"Take a cuddle from me {ctx.author.mention}", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://cdn.weeb.sh/images/B1SzeshCW.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.id == ctx.author.id:
+            embed = discord.Embed(description = f"{ctx.author.mention} just wanted to cuddle with someone", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://cdn.weeb.sh/images/BJkABImvb.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.id == self.client.user.id:
+            embed = discord.Embed(description = f"Take a cuddle from me {ctx.author.mention}", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://cdn.weeb.sh/images/B1SzeshCW.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.bot:
+            embed = discord.Embed(description = f"thanks {ctx.author.mention} for showing love by using cuddle on a bot", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://cdn.weeb.sh/images/r1VzDkmjW.gif')
+            await ctx.send(embed=embed)
+            return
+
+        #cuddle gifs list
+        gifscuddle = ['https://cdn.weeb.sh/images/SyZk8U7vb.gif',
+                'https://cdn.weeb.sh/images/BJseUI7wb.gif',
+                'https://cdn.weeb.sh/images/rk2-UL7PW.gif',
+                'https://cdn.weeb.sh/images/SJn18IXP-.gif',
+                'https://cdn.weeb.sh/images/SykzL87D-.gif',
+                'https://cdn.weeb.sh/images/HkZDkeamf.gif',
+                'https://cdn.weeb.sh/images/r1A77CZbz.gif',
+                'https://cdn.weeb.sh/images/ryfyLL7D-.gif']
+        #cuddle phrases
+        cuddle = [f'{ctx.author.mention} cuddles {user.mention}',
+                f'{ctx.author.mention} cuddles with {user.mention} but only **{ctx.author.name}** likes it',
+                f"{ctx.author.mention} can't stop cuddling {user.mention}",
+                f'{user.mention} tries to resit {ctx.author.mention} cuddles but ends up liking it',
+                f"{ctx.author.mention} cuddles {user.mention} who hates it but **{ctx.author.name}** don't care",
+                f'{ctx.author.mention} suddenly cuddles {user.mention} surprising them',
+                f'{ctx.author.mention} wishes {user.mention} would cuddle with them more often',
+                f"{user.mention} hates {ctx.author.mention} cuddles (even if sometimes it doesn't seems so)",
+                f"{user.mention} loves {ctx.author.mention} cuddles (even if sometimes it doesn't seems so)"]
+
+        embed = discord.Embed(description = f'{random.choice(cuddle)}', colour = random.randint(0, 0xFFFFFF))
+        embed.set_image(url=f'{random.choice(gifscuddle)}')
+        await ctx.send(embed=embed)
+
+
+
+    #insults another user command
+    @commands.command()
+    @commands.cooldown(1, 3.0, commands.BucketType.user)
+    async def insult(self, ctx, user: discord.Member = None):
+        await ctx.message.delete()
+        if not user:
+            embed = discord.Embed(description = f"Fuck u {ctx.author.mention}", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://cdn.weeb.sh/images/rJ07FuXvZ.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.id == ctx.author.id:
+            embed = discord.Embed(description = f"Fuck u {ctx.author.mention}", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://cdn.weeb.sh/images/rJ07FuXvZ.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.id == self.client.user.id:
+            embed = discord.Embed(description = f"I won' let you insult me {ctx.author.mention}", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://media1.tenor.com/images/aa6d975cb5318886db35f27f692d09d3/tenor.gif')
+            await ctx.send(embed=embed)
+            return
+        if user.bot:
+            embed = discord.Embed(description = f"Stop {ctx.author.mention}, I won' let you insult that bot", colour = random.randint(0, 0xFFFFFF))
+            embed.set_image(url='https://media1.tenor.com/images/0309270c724249c5061338422cf1d325/tenor.gif')
+            await ctx.send(embed=embed)
+            return
+
+        #insult gifs list
+        gifsinsult = ['https://cdn.weeb.sh/images/HJNGt_mwZ.gif',
+                'https://cdn.weeb.sh/images/ryxSrY_XDZ.jpeg',
+                'https://cdn.weeb.sh/images/BJDmYumDZ.gif',
+                'https://cdn.weeb.sh/images/HJyBFu7Db.gif',
+                'https://cdn.weeb.sh/images/By9VFuXPb.gif',
+                'https://cdn.weeb.sh/images/HyYfK_Qwb.gif',
+                'https://cdn.weeb.sh/images/rJmEFd7DW.gif',
+                'https://cdn.weeb.sh/images/rJbMK_7vW.gif']
+        #insult phrases
+        insult = [f'{ctx.author.mention} has insulted {user.mention}',
+                f'{ctx.author.mention} has insulted {user.mention}']
+
+        embed = discord.Embed(description = f'{random.choice(insult)}', colour = random.randint(0, 0xFFFFFF))
+        embed.set_image(url=f'{random.choice(gifsinsult)}')
+        await ctx.send(embed=embed)
+
+
 def setup(client):
     client.add_cog(anime(client))
