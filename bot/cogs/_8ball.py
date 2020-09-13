@@ -44,7 +44,10 @@ class _8ball(commands.Cog):
     @ball.error
     async def ball_error(self, ctx, error):
         if isinstance(error, commands.MissingRequiredArgument):
-            await ctx.send("Correct use: !8ball <question> or !8 <question>")
+            embed = discord.Embed(colour = discord.Colour.red())
+            embed.add_field(name='**Correct uses:**', value='!8ball *<question>*\n!8 *<question>*')
+            await ctx.send(embed=embed)
+            #await ctx.send("**Correct use:**\n!8ball *<question>* or !8 *<question>*")
 
 def setup(client):
     client.add_cog(_8ball(client))
