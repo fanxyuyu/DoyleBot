@@ -31,7 +31,7 @@ class anime(commands.Cog):
         embed.set_image(url='https://i.alexflipnote.dev/500ce4.gif')
         await ctx.send(embed=embed)
 
-        
+
 
     #hug another user command
     @commands.command()
@@ -85,7 +85,7 @@ class anime(commands.Cog):
         await ctx.send(embed=embed)
 
 
-        
+
     #kiss another user command
     @commands.command()
     @commands.cooldown(1, 3.0, commands.BucketType.user)
@@ -139,7 +139,7 @@ class anime(commands.Cog):
         embed.set_image(url=f'{random.choice(gifskiss)}')
         await ctx.send(embed=embed)
 
-        
+
 
     #slaps another user command
     @commands.command()
@@ -193,6 +193,7 @@ class anime(commands.Cog):
         embed = discord.Embed(description = f'{random.choice(slap)}', colour = random.randint(0, 0xFFFFFF))
         embed.set_image(url=f'{random.choice(gifslap)}')
         await ctx.send(embed=embed)
+
 
 
     #pats another user command
