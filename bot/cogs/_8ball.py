@@ -7,7 +7,7 @@ class _8ball(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(aliases=['8ball']) #use to set a list that can run a command
+    @commands.command(aliases=['8ball', '8']) #use to set a list that can run a command
     async def _8ball(self, ctx, *, question): #you can't start a command with number
         responses = ['Com certeza!',
                     'Não sei, pergunta pro leo.',
