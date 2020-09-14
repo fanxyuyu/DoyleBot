@@ -9,7 +9,7 @@ class anime(commands.Cog):
 
 
     #simple notice me senpai command with a gif
-    @commands.command(aliases=['noticemesenpai', 'senpai'])
+    @commands.command(aliases=['noticemesenpai', 'senpai', 'SENPAI', 'NOTICEME', 'Senpai', 'Notice'])
     @commands.cooldown(1, 4.0, commands.BucketType.user)
     async def noticeme(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
@@ -34,7 +34,7 @@ class anime(commands.Cog):
 
 
     #hug another user command
-    @commands.command()
+    @commands.command(aliases=['Hug', 'HUG'])
     @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def hug(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
@@ -87,7 +87,7 @@ class anime(commands.Cog):
 
 
     #kiss another user command
-    @commands.command()
+    @commands.command(aliases=['Kiss', 'KISS'])
     @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def kiss(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
@@ -142,7 +142,7 @@ class anime(commands.Cog):
 
 
     #slaps another user command
-    @commands.command()
+    @commands.command(aliases=['Slap', 'SLAP'])
     @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def slap(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
@@ -197,7 +197,7 @@ class anime(commands.Cog):
 
 
     #pats another user command
-    @commands.command()
+    @commands.command(aliases=['Pat', 'PAT'])
     @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def pat(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
@@ -253,7 +253,7 @@ class anime(commands.Cog):
 
 
     #kills another user command
-    @commands.command()
+    @commands.command(aliases=['Kill', 'KILL'])
     @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def kill(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
@@ -296,7 +296,7 @@ class anime(commands.Cog):
 
 
     #licks another user command
-    @commands.command()
+    @commands.command(aliases=['Lick', 'LICK'])
     @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def lick(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
@@ -342,7 +342,7 @@ class anime(commands.Cog):
 
 
     #cuddle with another user command
-    @commands.command()
+    @commands.command(aliases=['Cuddle', 'CUDDLE'])
     @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def cuddle(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
@@ -394,7 +394,7 @@ class anime(commands.Cog):
 
 
     #insults another user command
-    @commands.command()
+    @commands.command(aliases=['Insult', 'INSULT'])
     @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def insult(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
