@@ -9,18 +9,18 @@ class names(commands.Cog):
     #commands
     @commands.command()
     async def hiter(self, ctx):
-        await ctx.send('Lindo, maravilhoso e cheiroso!')
+        await ctx.send('Eu nunca vi alguém com tanta autoestima, parabéns pelo double ego!')
     @commands.command()
     async def bruno(self, ctx):
-        await ctx.send('mto zika')
+        await ctx.send('Meu criador... ele que me fez assim :(')
 
     @commands.command()
     async def giovanna(self, ctx):
-        await ctx.send('')
+        await ctx.send('Sei lá giovanna... acho que é isso... Nunca mais vou me recuperar desse trauma. Rainha da programação nas horas vagas')
 
     @commands.command()
     async def baruel(self, ctx):
-        await ctx.send('por favor baruel, para de mandar gif merda')
+        await ctx.send('por favor baruel, para de mandar gif merda e programar no celular 3 da manhã pelo celular na casa da namorada')
 
     @commands.command()
     async def cat(self, ctx):
