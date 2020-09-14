@@ -10,7 +10,7 @@ class time(commands.Cog):
         self.client = client
 
     #time italy
-    @commands.command()
+    @commands.command(aliases=['Italy', 'ITALY'])
     async def italy(self, ctx): #formerly printCurrentTime
         fmt = "%H:%M:%S"
         # Current time in UTC
