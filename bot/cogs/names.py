@@ -16,7 +16,7 @@ class names(commands.Cog):
 
     @commands.command()
     async def giovanna(self, ctx):
-        await ctx.send('desculpa giovanna, não foi minha intenção te ofender. Vou manter minha distãncia e me policiar, prometo lembrar por mais de 2 dias dos momentos em que fomos colegas :)')
+        await ctx.send('')
 
     @commands.command()
     async def baruel(self, ctx):
@@ -24,7 +24,7 @@ class names(commands.Cog):
 
     @commands.command()
     async def cat(self, ctx):
-        await ctx.send('Deboche, ironia e ódio gratuito')
+        await ctx.send('Deboche, ironia e ódio gratuito... e pezinho fofinho :3')
 
     @commands.command()
     async def felipe(self, ctx):
