@@ -5,7 +5,7 @@ import asyncio #to delete message
 from discord.ext import commands, tasks
 from itertools import cycle #import to create a cycle on bot status
 
-startup_extensions = ['cogs._8ball','cogs.anime','cogs.fun','cogs.help','cogs.names','cogs.time'] #starts defined cogs
+startup_extensions = ['cogs._8ball','cogs.anime','cogs.anime2','cogs.fun','cogs.help','cogs.names','cogs.time'] #starts defined cogs
 
 client = commands.Bot(command_prefix = '!')
 status = cycle(['use !help | v0.3'])
