@@ -7,7 +7,7 @@ class _8ball(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(aliases=['8ball', '8', '8BALL']) #use to set a list that can run a command
+    @commands.command(aliases=['8ball', '8', '8BALL', '8Ball']) #use to set a list that can run a command
     @commands.cooldown(1, 3.0, commands.BucketType.user)
     async def ball(self, ctx, *, question): #you can't start a command with number
         responses = ['Com certeza!',
