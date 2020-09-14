@@ -23,7 +23,7 @@ async def change_status():
     await client.change_presence(activity=discord.Game(next(status)))
 
 #ping tester
-@client.command()
+@client.command(aliases=['PING', 'Ping'])
 async def ping(ctx): #parameter
     await ctx.send(f'`Ping: {round (client.latency * 1000)} ms`')
 
@@ -38,7 +38,7 @@ async def on_command_error(ctx, error):
         return
 
 #clear <qnt> command -> defined to role named a
-@client.command()
+@client.command(aliases=['CLEAR', 'Clear'])
 @commands.has_role('a')
 #@commands.cooldown(1, 3.0, commands.BucketType.user)
 async def clear(ctx, amount: int):
