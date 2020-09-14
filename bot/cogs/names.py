@@ -20,7 +20,7 @@ class names(commands.Cog):
 
     @commands.command()
     async def baruel(self, ctx):
-        await ctx.send('por favor baruel, para de mandar gif merda e programar no celular 3 da manhã pelo celular na casa da namorada')
+        await ctx.send('por favor baruel, para de mandar gif merda e de programar no celular 3 da manhã pelo celular na casa da namorada')
 
     @commands.command()
     async def cat(self, ctx):
