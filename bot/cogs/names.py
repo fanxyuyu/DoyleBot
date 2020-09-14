@@ -16,7 +16,7 @@ class names(commands.Cog):
 
     @commands.command()
     async def giovanna(self, ctx):
-        await ctx.send('desculpa giovanna, não foi minha intenção te ofender. Vou manter minha distãncia e me policiar, vou lembrar por 2 dias dos momentos em que fomos colegas.')
+        await ctx.send('desculpa giovanna, não foi minha intenção te ofender. Vou manter minha distãncia e me policiar, prometo lembrar por mais de 2 dias dos momentos em que fomos colegas :)')
 
     @commands.command()
     async def baruel(self, ctx):
