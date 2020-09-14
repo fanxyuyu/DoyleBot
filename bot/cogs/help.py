@@ -33,7 +33,7 @@ class help(commands.Cog):
     async def anime(self, ctx):
         embed = discord.Embed(title = 'Anime commands', description = '**interaction use:** *!command <@user>*', colour = discord.Colour.blue())
         embed.set_thumbnail(url='https://i.ibb.co/S7mKyfQ/123.jpg')
-        embed.add_field(name='Reaction', value='soon')
+        embed.add_field(name='Reaction', value='blush\ncry\ndance\npout\nsmug')
         embed.add_field(name='Interaction', value='senpai\nhug\nkiss\nslap\npat\nkill\nlick\ncuddle\ninsult')
         await ctx.send(embed=embed)
 
