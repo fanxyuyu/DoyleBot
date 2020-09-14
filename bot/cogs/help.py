@@ -7,7 +7,7 @@ class help(commands.Cog):
         self.client = client
 
     #custom help command
-    @commands.command()
+    @commands.command(aliases=['HELP', 'Help'])
     async def help(self, ctx):
         embed = discord.Embed(
             title = 'Commands list',
@@ -22,14 +22,14 @@ class help(commands.Cog):
         await ctx.send(embed=embed)
 
     #names commands
-    @commands.command()
+    @commands.command(aliases=['NAMES', 'Names'])
     async def names(self, ctx):
         embed = discord.Embed(colour = discord.Colour.blue())
         embed.add_field(name='Names', value='baruel\nbruno\ncat\ndaniel\nfelipe\ngiovanna\nhiter\nleo\npv\nwilly', inline=False)
         await ctx.send(embed=embed)
 
     #anime commands
-    @commands.command()
+    @commands.command(aliases=['Anime', 'ANIME'])
     async def anime(self, ctx):
         embed = discord.Embed(title = 'Anime commands', description = '**interaction use:** *!command <@user>*', colour = discord.Colour.blue())
         embed.set_thumbnail(url='https://i.ibb.co/S7mKyfQ/123.jpg')
