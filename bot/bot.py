@@ -28,14 +28,27 @@ async def ping(ctx): #parameter
     await ctx.send(f'`Ping: {round (client.latency * 1000)} ms`')
 
 #command error
-@client.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandOnCooldown): #if command is on cooldown
-        times = round(error.retry_after, 1)
-        message = await ctx.send(f"{ctx.author.mention} you can use this command in `{times}` Seconds(s)")
-        time.sleep(2)
-        await message.delete()
-        return
+        times = round(error.retry_after, 2)
+        times = times % (24 * 3600)
+        hours = int(times // 3600)
+        times %= 3600
+        minutes = int(times // 60)
+        times %= 60
+        seconds = int(times)
+        if (hours>=1):
+            message = await ctx.send(f"{ctx.author.mention} -> you can use this command in `{hours} hour(s), {minutes} minute(s) and {seconds} seconds(s)`")
+            time.sleep(3)
+            return await message.delete()
+        if ((hours < 1) & (minutes >= 1)):
+            message = await ctx.send(f"{ctx.author.mention} -> you can use this command in `{minutes} minute(s) and {seconds} seconds(s)`")
+            time.sleep(3)
+            return await message.delete()
+        elif (minutes < 1):
+            message = await ctx.send(f"{ctx.author.mention} -> you can use this command in `{seconds} seconds(s)`")
+            time.sleep(3)
+            return await message.delete()
 
 #clear <qnt> command -> defined to role named a
 @client.command(aliases=['CLEAR', 'Clear'])
