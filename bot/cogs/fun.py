@@ -30,6 +30,7 @@ class fun(commands.Cog):
         
     #See someones avatar
     @commands.command()
+    @commands.cooldown(1, 4.0, commands.BucketType.user)
     async def avatar(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
         if not user:
