@@ -27,6 +27,22 @@ class fun(commands.Cog):
     async def reverse(self, ctx, *, text: str):
         t_rev = text[::-1].replace("@", "@\u200B").replace("&", "&\u200B")
         await ctx.send(f":arrows_counterclockwise: {t_rev}")
+        
+    #See someones avatar
+    @commands.command()
+    async def avatar(self, ctx, user: discord.Member = None):
+        await ctx.message.delete()
+        if not user:
+            embed = discord.Embed(colour = random.randint(0, 0xFFFFFF))
+            embed.set_author(name = f"{ctx.author.name}'s profile picture", icon_url = ctx.author.avatar_url)
+            embed.set_image(url = ctx.author.avatar_url)
+            return await ctx.send(embed = embed)
+        else:
+            embed = discord.Embed(colour = random.randint(0, 0xFFFFFF))
+            embed.set_author(name = f"{user.name}'s profile picture", icon_url = user.avatar_url)
+            embed.set_image(url = user.avatar_url)
+            return await ctx.send(embed = embed)
+        
 
 def setup(client):
     client.add_cog(fun(client))
