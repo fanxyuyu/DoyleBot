@@ -28,6 +28,7 @@ async def ping(ctx): #parameter
     await ctx.send(f'`Ping: {round (client.latency * 1000)} ms`')
 
 #command error
+@client.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandOnCooldown): #if command is on cooldown
         times = round(error.retry_after, 2)
