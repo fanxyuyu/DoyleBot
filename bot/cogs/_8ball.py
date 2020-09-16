@@ -39,7 +39,7 @@ class _8ball(commands.Cog):
                     'pergunta pro cat, ele sabe a resposta certa',
                     'O importante é ser feliz e não perfeito',
                     'Sinto muito em te dizer, mas sim...',
-                    'Sinto muito em te dizer, mas não...,
+                    'Sinto muito em te dizer, mas não...',
                     'hãn... não?',
                     'hãn... sim?',
                     'eu não sei :( não aguento mais decepcionar vocês... me perdoem vou melhorar']
