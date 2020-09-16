@@ -132,8 +132,8 @@ class anime(commands.Cog):
                 f'{ctx.author.mention} surprises {user.mention} with a kiss',
                 f'{ctx.author.mention} kisses {user.mention} and **5** others later',
                 f'{ctx.author.mention} kisses {user.mention} but regrets it later',
-                f'{ctx.author.mention} kisses {user.mention} but **{user.name}** regrets it later',
-                f'{ctx.author.mention} kisses {user.mention} and **{user.name}** falls in love']
+                f'{ctx.author.mention} kisses {user.mention} but **{user.nick}** regrets it later',
+                f'{ctx.author.mention} kisses {user.mention} and **{user.nick}** falls in love']
 
         embed = discord.Embed(description = f'{random.choice(kiss)}', colour = random.randint(0, 0xFFFFFF))
         embed.set_image(url=f'{random.choice(gifskiss)}')
@@ -183,11 +183,11 @@ class anime(commands.Cog):
         slap = [f'{ctx.author.mention} slaps {user.mention}',
                 f'{ctx.author.mention} slaps {user.mention} with all her mighty',
                 f'{ctx.author.mention} surprises {user.mention} with a slap',
-                f'{ctx.author.mention} slaps {user.mention} but **{user.name}** likes it',
-                f'{ctx.author.mention} slapped {user.mention} so hard that **{user.name}** ends up liking it',
+                f'{ctx.author.mention} slaps {user.mention} but **{user.nick}** likes it',
+                f'{ctx.author.mention} slapped {user.mention} so hard that **{user.nick}** ends up liking it',
                 f'{ctx.author.mention} slaps {user.mention} for no reason',
-                f'{ctx.author.mention} slaps {user.mention} because **{user.name}** was mean',
-                f'{ctx.author.mention} slaps {user.mention} but **{user.name}** take revenge later',
+                f'{ctx.author.mention} slaps {user.mention} because **{user.nick}** was mean',
+                f'{ctx.author.mention} slaps {user.mention} but **{user.nick}** take revenge later',
                 f'{ctx.author.mention} slaps {user.mention} but regrets it later']
 
         embed = discord.Embed(description = f'{random.choice(slap)}', colour = random.randint(0, 0xFFFFFF))
@@ -237,13 +237,13 @@ class anime(commands.Cog):
                 'https://media1.tenor.com/images/2cf1704769d0227c69ebc4b6c85e274b/tenor.gif']
         #pats phrases
         pats = [f'{ctx.author.mention} pats {user.mention}',
-                f'{ctx.author.mention} pats {user.mention} and **{user.name}** likes it',
+                f'{ctx.author.mention} pats {user.mention} and **{user.nick}** likes it',
                 f'{ctx.author.mention} surprises {user.mention} by patting them',
-                f'{ctx.author.mention} pats {user.mention} but **{user.name}** gets tired after a while',
-                f'{ctx.author.mention} pats {user.mention} so hard that **{user.name}** ends up with a headache later',
+                f'{ctx.author.mention} pats {user.mention} but **{user.nick}** gets tired after a while',
+                f'{ctx.author.mention} pats {user.mention} so hard that **{user.nick}** ends up with a headache later',
                 f'{ctx.author.mention} pats {user.mention} for no reason',
                 f'{ctx.author.mention} pats {user.mention} to make him feel better',
-                f'{ctx.author.mention} pats {user.mention} and **{user.name}** falls in love',
+                f'{ctx.author.mention} pats {user.mention} and **{user.nick}** falls in love',
                 f'{ctx.author.mention} pats {user.mention} all night long']
 
         embed = discord.Embed(description = f'{random.choice(pats)}', colour = random.randint(0, 0xFFFFFF))
@@ -286,7 +286,7 @@ class anime(commands.Cog):
         kills = [f'{ctx.author.mention} wants to kill {user.mention}',
                 f'{ctx.author.mention} just killed {user.mention}',
                 f'{ctx.author.mention} kills {user.mention} but regrets it later',
-                f'{ctx.author.mention} tries to kill {user.mention} but **{user.name}** survives',
+                f'{ctx.author.mention} tries to kill {user.mention} but **{user.nick}** survives',
                 f'{ctx.author.mention} killed {user.mention} and enjoyed it way too much',
                 f'{ctx.author.mention} kills {user.mention} for no reason']
 
@@ -329,7 +329,7 @@ class anime(commands.Cog):
                 'https://cdn.weeb.sh/images/rykRHmB6W.gif']
         #lick phrases
         licks = [f'{ctx.author.mention} licks {user.mention}',
-                f'{ctx.author.mention} licks {user.mention} and **{user.name}** likes it',
+                f'{ctx.author.mention} licks {user.mention} and **{user.nick}** likes it',
                 f'{ctx.author.mention} surprised {user.mention} with a lick',
                 f'{user.mention} tries to resit {ctx.author.mention} licks but with no succes',
                 f"{ctx.author.mention} starts to lick {user.mention} and can't stop",
@@ -378,10 +378,10 @@ class anime(commands.Cog):
                 'https://cdn.weeb.sh/images/ryfyLL7D-.gif']
         #cuddle phrases
         cuddle = [f'{ctx.author.mention} cuddles {user.mention}',
-                f'{ctx.author.mention} cuddles with {user.mention} but only **{ctx.author.name}** likes it',
+                f'{ctx.author.mention} cuddles with {user.mention} but only **{ctx.author.nick}** likes it',
                 f"{ctx.author.mention} can't stop cuddling {user.mention}",
                 f'{user.mention} tries to resit {ctx.author.mention} cuddles but ends up liking it',
-                f"{ctx.author.mention} cuddles {user.mention} who hates it but **{ctx.author.name}** don't care",
+                f"{ctx.author.mention} cuddles {user.mention} who hates it but **{ctx.author.nick}** don't care",
                 f'{ctx.author.mention} suddenly cuddles {user.mention} surprising them',
                 f'{ctx.author.mention} wishes {user.mention} would cuddle with them more often',
                 f"{user.mention} hates {ctx.author.mention} cuddles (even if sometimes it doesn't seems so)",
