@@ -28,7 +28,6 @@ class _8ball(commands.Cog):
                     'Esquece a pergunta te achei gatinha rsrs.',
                     'Não vou falar ^^',
                     'Pode confiar nisso.',
-                    'Segundo meu horóscopo... não posso te responder.',
                     'CLARO QUE SIM!',
                     'CLARO QUE NAO!',
                     'Se fosse o baruel perguntando eu diria que sim.',
