@@ -36,6 +36,21 @@ async def on_message_delete(message):
         embed.add_field(name=f'Mensagem deletada:', value=F'{message.content}')
         return await channels.send(embed = embed)
 
+#log for edited messages:
+@client.event
+async def on_message_edit(message_before, message_after):
+    #msg = str(message.author)+ 'deleted message in '+str(message.channel)+': '+str(message.content)' +'
+    channels = client.get_channel(756270352346382367)
+    if(message_before.author.bot):
+        return
+    else:
+        embed = discord.Embed(color = 12370112)
+        embed.set_author(name = f"{message_before.author}", icon_url = message_before.author.avatar_url)
+        embed.add_field(name=f'Canal:', value=F'{message_before.channel}', inline = False)
+        embed.add_field(name=f'Mensagem antes:', value=F'{message_before.content}')
+        embed.add_field(name=f'Mensagem depois:', value=F'{message_after.content}', inline = False)
+        return await channels.send(embed = embed)
+
 #ping tester
 @client.command(aliases=['PING', 'Ping'])
 async def ping(ctx): #parameter
