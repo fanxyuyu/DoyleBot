@@ -22,7 +22,7 @@ async def on_ready():
 async def change_status():
     await client.change_presence(activity=discord.Game(next(status)))
 
-log for deleted messages
+#log for deleted messages
 @client.event
 async def on_message_delete(message):
     msg = str(message.author)+ 'deleted message in '+str(message.channel)+': '+str(message.content)
