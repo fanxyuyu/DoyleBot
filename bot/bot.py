@@ -22,19 +22,19 @@ async def on_ready():
 async def change_status():
     await client.change_presence(activity=discord.Game(next(status)))
 
-#log for deleted messages
-#@client.event
-#async def on_message_delete(message):
-#    msg = str(message.author)+ 'deleted message in '+str(message.channel)+': '+str(message.content)
-#    channels = client.get_channel(756270352346382367)
-#    if(message.author.bot):
-#        return
-#    else:
-#        embed = discord.Embed(color = 12370112)
-#        embed.set_author(name = f"{message.author}", icon_url = message.author.avatar_url)
-#        embed.add_field(name=f'Canal:', value=F'{message.channel}', inline = False)
-#        embed.add_field(name=f'Mensagem deletada:', value=F'{message.content}')
-#        return await channels.send(embed = embed)
+log for deleted messages
+@client.event
+async def on_message_delete(message):
+    msg = str(message.author)+ 'deleted message in '+str(message.channel)+': '+str(message.content)
+    channels = client.get_channel(756270352346382367)
+    if(message.author.bot):
+        return
+    else:
+        embed = discord.Embed(color = 12370112)
+        embed.set_author(name = f"{message.author}", icon_url = message.author.avatar_url)
+        embed.add_field(name=f'Canal:', value=F'{message.channel}', inline = False)
+        embed.add_field(name=f'Mensagem deletada:', value=F'{message.content}')
+        return await channels.send(embed = embed)
 
 #log for edited messages:
 @client.event
