@@ -40,6 +40,7 @@ class _8ball(commands.Cog):
                     'Sinto muito em te dizer, mas não...',
                     'hãn... não?',
                     'hãn... sim?',
+                    'pior que não',
                     'eu não sei :( não aguento mais decepcionar vocês... me perdoem vou melhorar']
         await ctx.send(f'Pergunta: {question}\nResposta: {random.choice(responses)}')
 
