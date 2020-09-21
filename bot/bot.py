@@ -94,6 +94,12 @@ async def clear_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send('Correct use: !clear <qntd>')
         
+#random fact   
+@client.command()
+async def fact(ctx):
+    x = randfacts.getFact()
+    return await ctx.send(x)
+        
 #load cogs
 if __name__ == "__main__":
     for extension in startup_extensions:
