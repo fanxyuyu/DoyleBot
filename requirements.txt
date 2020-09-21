@@ -1,4 +1,4 @@
 discord.py
 pytz
 cogs
-randfacts 0.2.4 
+randfacts
