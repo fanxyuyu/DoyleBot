@@ -97,6 +97,7 @@ async def clear_error(ctx, error):
         
 #random fact   
 @client.command()
+@commands.cooldown(1, 5.0, commands.BucketType.user)
 async def fact(ctx):
     x = randfacts.getFact()
     return await ctx.send(x)
