@@ -2,6 +2,7 @@ import discord
 import os #to use cogs
 import time #to use time.sleep
 import asyncio #to delete message
+import randfacts #for random facts
 from discord.ext import commands, tasks
 from itertools import cycle #import to create a cycle on bot status
 
