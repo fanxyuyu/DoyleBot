@@ -15,6 +15,7 @@ client.remove_command('help') #removes default help command
 #Load message
 @client.event
 async def on_ready():
+    RecompensaRealm.start()
     change_status.start()
     print(f'bot: {client.user} is now online!')
 
@@ -101,6 +102,22 @@ async def clear_error(ctx, error):
 async def fact(ctx):
     x = randfacts.getFact()
     return await ctx.send(x)
+
+
+#mensagem de recompensa do realm
+@tasks.loop(hours=24)
+async def RecompensaRealm():
+    channels = client.get_channel(755530735376531557)
+    try:
+        d = 'https://i.imgur.com/SyW1gzN.png'
+        embed = discord.Embed(title = 'recompensa do realm', description = f"não se esqueçam de pegar a recompensa de hoje!", color = 12370112)
+        embed.set_thumbnail(url = d)
+        await channels.send("@everyone")
+        await channels.send(embed = embed)
+        print("Mensagem de recompensa enviada")
+    except Exception as e:
+        print(f"Mensagem de recompensa error: {e}")
+
         
 #load cogs
 if __name__ == "__main__":
