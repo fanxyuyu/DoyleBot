@@ -106,7 +106,7 @@ async def fact(ctx):
 #mensagem de recompensa do realm
 @tasks.loop(hours=24)
 async def RecompensaRealm():
-    channels = client.get_channel(755530735376531557)
+    channels = client.get_channel(754189564670902292)
     try:
         d = 'https://i.imgur.com/SyW1gzN.png'
         embed = discord.Embed(title = 'recompensa do realm', description = f"não se esqueçam de pegar a recompensa de hoje!", color = 12370112)
