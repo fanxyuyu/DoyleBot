@@ -103,7 +103,6 @@ async def fact(ctx):
     x = randfacts.getFact()
     return await ctx.send(x)
 
-
 #mensagem de recompensa do realm
 @tasks.loop(hours=24)
 async def RecompensaRealm():
@@ -117,8 +116,7 @@ async def RecompensaRealm():
         print("Mensagem de recompensa enviada")
     except Exception as e:
         print(f"Mensagem de recompensa error: {e}")
-
-        
+      
 #load cogs
 if __name__ == "__main__":
     for extension in startup_extensions:
