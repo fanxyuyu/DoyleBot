@@ -111,8 +111,8 @@ async def RecompensaRealm():
         d = 'https://i.imgur.com/SyW1gzN.png'
         embed = discord.Embed(title = 'recompensa do realm', description = f"não se esqueçam de pegar a recompensa de hoje!", color = 12370112)
         embed.set_thumbnail(url = d)
-        #await channels.send("@everyone")
-        #await channels.send(embed = embed)
+        await channels.send("@everyone")
+        await channels.send(embed = embed)
         print("Mensagem de recompensa enviada")
     except Exception as e:
         print(f"Mensagem de recompensa error: {e}")
