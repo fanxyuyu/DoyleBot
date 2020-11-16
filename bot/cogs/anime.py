@@ -61,17 +61,15 @@ class anime(commands.Cog):
 
         #hugs gifs list
         gifshug = ['https://media1.tenor.com/images/506aa95bbb0a71351bcaa753eaa2a45c/tenor.gif',
-                'https://cdn.weeb.sh/images/Hyv6uOQPZ.gif',
-                'https://cdn.weeb.sh/images/Hyv6uOQPZ.gif',
                 'https://cdn.weeb.sh/images/Sk80wyhqz.gif',
-                'https://media1.tenor.com/images/e9d7da26f8b2adbb8aa99cfd48c58c3e/tenor.gif',
-                'https://media1.tenor.com/images/460c80d4423b0ba75ed9592b05599592/tenor.gif', #meh?
-                'https://media1.tenor.com/images/7d6a56988dc7e6152ca578b7a1f24be9/tenor.gif',
-                'https://media1.tenor.com/images/79aa56112b2d0eca4f50e9df188e18ad/tenor.gif',
-                'https://cdn.weeb.sh/images/B11CDkhqM.gif',
                 'https://media1.tenor.com/images/49a21e182fcdfb3e96cc9d9421f8ee3f/tenor.gif',
-                'https://cdn.weeb.sh/images/H1X6OOmPW.gif',
-                'https://cdn.weeb.sh/images/HJ7lY_QwW.gif']
+                'https://acegif.com/wp-content/gif/anime-hug-14.gif',
+                'https://acegif.com/wp-content/gif/anime-hug-19.gif',
+                'https://acegif.com/wp-content/gif/anime-hug-6.gif',
+                'https://acegif.com/wp-content/gif/anime-hug-9.gif',
+                'https://acegif.com/wp-content/gif/anime-hug-20.gif',
+                'https://acegif.com/wp-content/gif/anime-hug-64.gif',
+                'https://acegif.com/wp-content/gif/anime-hug-42.gif']
         #hugs phrases
         hugs = [f'{ctx.author.mention} hugs tightly {user.mention}',
                 f'{ctx.author.mention} hugs {user.mention}',
