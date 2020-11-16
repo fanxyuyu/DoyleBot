@@ -99,7 +99,7 @@ class anime(commands.Cog):
             return
         if user.id == self.client.user.id:
             embed = discord.Embed(description = f"DUMMY!! do~don't do that to me {ctx.author.mention}", colour = random.randint(0, 0xFFFFFF))
-            embed.set_image(url='https://i.pinimg.com/originals/b0/93/ec/b093ec61870988f4098dd8b7f1d1cec1.gif')
+            embed.set_image(url='https://acegif.com/wp-content/gif/blushing-36.gif')
             await ctx.send(embed=embed)
             return
         if user.bot:
