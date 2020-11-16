@@ -45,11 +45,11 @@ class names(commands.Cog):
     @commands.command()
     async def daniel(self, ctx):
         embed = discord.Embed(
-            title = 'Daniel com seus amigos',
-            description = 'foi mal maat',
+            title = 'DanielMatiasz',
+            description = 'o terror do meier',
             colour = discord.Colour.blue()
         )
-        embed.set_image(url='https://media.tenor.com/images/8f50bd23019d8d303e5a12911c259b61/tenor.gif')
+        embed.set_image(url='https://i.ibb.co/GxjNr4H/aaaaa.png')
         await ctx.send(embed=embed)
 
     @commands.command()
