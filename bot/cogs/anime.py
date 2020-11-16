@@ -109,19 +109,18 @@ class anime(commands.Cog):
             return
 
         #kiss gifs list
-        gifskiss = ['https://media1.tenor.com/images/f5167c56b1cca2814f9eca99c4f4fab8/tenor.gif', #meh
-                'https://media1.tenor.com/images/621ceac89636fc46ecaf81824f9fee0e/tenor.gif', #meh
-                'https://media1.tenor.com/images/40711a5b00fcf9918ddef1aa483d993f/tenor.gif',
-                'https://cdn.weeb.sh/images/rypMnpuvW.gif',
-                'https://media1.tenor.com/images/a0b68f4704f811bfcc517574425e96a5/tenor.gif',
-                'https://cdn.weeb.sh/images/B1MJ2aODb.gif',
-                'https://media1.tenor.com/images/37ceeaa82fb503fb10bbd539ad4e3fd8/tenor.gif',
-                'https://media1.tenor.com/images/3dc3bb6e35aa0d090527babe698bfe55/tenor.gif',
-                'https://media1.tenor.com/images/be905a75eb3036494fc32df12b7c1b7a/tenor.gif',
-                'https://cdn.weeb.sh/images/rJoL2pdvb.gif',
-                'https://cdn.weeb.sh/images/Sk1k3TdPW.gif',
+        gifskiss = ['https://acegif.com/wp-content/uploads/anime-kissin-2.gif',
+                'https://acegif.com/wp-content/uploads/anime-kissin-5.gif',
+                'https://acegif.com/wp-content/uploads/anime-kissin-6.gif',
+                'https://acegif.com/wp-content/uploads/anime-kissin-10.gif',
+                'https://acegif.com/wp-content/uploads/anime-kiss-38.gif',
+                'https://acegif.com/wp-content/uploads/anime-kiss-31.gif',
+                'https://acegif.com/wp-content/uploads/anime-kiss-30.gif',
+                'https://acegif.com/wp-content/uploads/anime-kiss-9.gif',
+                'https://acegif.com/wp-content/uploads/anime-kiss-4.gif',
+                'https://acegif.com/wp-content/uploads/anime-kiss-1.gif',
                 'https://cdn.weeb.sh/images/ByiMna_vb.gif',
-                'https://cdn.weeb.sh/images/Sksk4l51z.gif']
+                'https://cdn.weeb.sh/images/rJoL2pdvb.gif']
         #kiss phrases
         kiss = [f'{ctx.author.mention} kisses {user.mention}',
                 f'{ctx.author.mention} just kissed {user.mention} all night long',
