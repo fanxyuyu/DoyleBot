@@ -84,15 +84,15 @@ class anime2(commands.Cog):
     async def dance(self, ctx, user: discord.Member = None):
         await ctx.message.delete()
 
-        dancegifs = ['https://cdn.weeb.sh/images/SJWuu8mwW.gif',
+        dancegifs = ['https://media1.giphy.com/media/EW3CTnkH6uy3K/giphy.gif',
+                    'https://media3.giphy.com/media/b7l5cvG94cqo8/giphy.gif',
+                    'https://cdn.weeb.sh/images/SJWuu8mwW.gif',
                     'https://cdn.weeb.sh/images/H1ha_L7DW.gif',
-                    'https://cdn.weeb.sh/images/B1LUuImvZ.gif',
-                    'https://cdn.weeb.sh/images/BJoRuLXPW.gif',
                     'https://i.imgur.com/Fs51fKV.gif',
-                    'https://cdn.weeb.sh/images/BJYVd8QPb.gif',
-                    'https://cdn.weeb.sh/images/rkBLuIXwZ.gif',
-                    'https://i.imgur.com/pFFirFe.gif',
-                    'https://cdn.weeb.sh/images/Hk0duIXPb.gif']
+                    'https://cdn.weeb.sh/images/Hk0duIXPb.gif',
+                    'https://media4.giphy.com/media/w5MSivCJcmHEQ/giphy.gif',
+                    'https://media0.giphy.com/media/N4AIdLd0D2A9y/giphy.gif',
+                    'https://media1.tenor.com/images/c5bf0c167048f0baf563e42611a1eaa2/tenor.gif?itemid=14872583']
 
         if not user:
             embed = discord.Embed(description = f"{ctx.author.mention}** has started to dance**", colour = random.randint(0, 0xFFFFFF))
