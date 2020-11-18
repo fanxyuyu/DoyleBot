@@ -59,7 +59,7 @@ class names(commands.Cog):
             description = 'kawaii moe ><',
             colour = discord.Colour.blue()
         )
-        embed.set_image(url='https://ibb.co/7pjtsY0')
+        embed.set_image(url='https://i.ibb.co/kD52NHP/saporra.png')
         await ctx.send(embed=embed)
 
     @commands.command()
