@@ -53,6 +53,16 @@ class names(commands.Cog):
         await ctx.send(embed=embed)
 
     @commands.command()
+    async def saporra(self, ctx):
+        embed = discord.Embed(
+            title = 'saporra',
+            description = 'kawaii moe ><',
+            colour = discord.Colour.blue()
+        )
+        embed.set_image(url='https://ibb.co/7pjtsY0')
+        await ctx.send(embed=embed)
+
+    @commands.command()
     async def leo(self, ctx):
         await ctx.send('Ta tudo bem leo, o importante é ser feliz e não perfeito')
 
