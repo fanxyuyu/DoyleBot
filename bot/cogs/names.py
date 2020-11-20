@@ -36,7 +36,7 @@ class names(commands.Cog):
     async def pv(self, ctx):
         embed = discord.Embed(
             title = 'paulin bacana',
-            description = 'foi mal daniel',
+            #description = 'foi mal daniel',
             colour = discord.Colour.blue()
         )
         embed.set_image(url='https://media1.tenor.com/images/ef12d730c3d3044f384fea8cb6d8a3a5/tenor.gif')
