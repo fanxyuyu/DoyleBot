@@ -35,11 +35,11 @@ class names(commands.Cog):
     @commands.command()
     async def pv(self, ctx):
         embed = discord.Embed(
-            title = 'pvtdo <3 khitara',
+            title = 'paulin bacana',
             description = 'foi mal daniel',
             colour = discord.Colour.blue()
         )
-        embed.set_image(url='https://i.makeagif.com/media/10-09-2015/-vktJk.gif')
+        embed.set_image(url='https://media1.tenor.com/images/ef12d730c3d3044f384fea8cb6d8a3a5/tenor.gif')
         await ctx.send(embed=embed)
 
     @commands.command()
