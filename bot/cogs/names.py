@@ -42,15 +42,15 @@ class names(commands.Cog):
         embed.set_image(url='https://media1.tenor.com/images/ef12d730c3d3044f384fea8cb6d8a3a5/tenor.gif')
         await ctx.send(embed=embed)
 
-    @commands.command()
-    async def daniel(self, ctx):
-        embed = discord.Embed(
-            title = 'DanielMatiasz',
-            description = 'o terror do meier',
-            colour = discord.Colour.blue()
-        )
-        embed.set_image(url='https://i.ibb.co/GxjNr4H/aaaaa.png')
-        await ctx.send(embed=embed)
+    #@commands.command()
+    #async def daniel(self, ctx):
+        #embed = discord.Embed(
+            #title = 'DanielMatiasz',
+            #description = 'o terror do meier',
+            #colour = discord.Colour.blue()
+        #)
+        #embed.set_image(url='https://i.ibb.co/GxjNr4H/aaaaa.png')
+        #await ctx.send(embed=embed)
 
     @commands.command()
     async def saporra(self, ctx):
