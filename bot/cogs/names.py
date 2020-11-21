@@ -8,8 +8,8 @@ class names(commands.Cog):
 
     #commands
     @commands.command()
-    async def hiter(self, ctx):
-        await ctx.send('Eu nunca vi alguém com tanta autoestima, parabéns pelo double ego!')
+    async def jack(self, ctx):
+        await ctx.send('Eu nunca vi alguém com tanta autoestima, parabéns pelo double ego! #OMaisHumildeDoDiscord')
     @commands.command()
     async def bruno(self, ctx):
         await ctx.send('Meu criador... ele que me fez assim :(')
