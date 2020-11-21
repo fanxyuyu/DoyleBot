@@ -15,7 +15,7 @@ class names(commands.Cog):
         await ctx.send('Meu criador... ele que me fez assim :(')
 
     @commands.command()
-    async def giovanna(self, ctx):
+    async def giovannasasa(self, ctx):
         await ctx.send('Sei lá giovanna... acho que é isso... Nunca mais vou me recuperar desse trauma. Rainha da programação nas horas vagas')
 
     @commands.command()
@@ -40,6 +40,16 @@ class names(commands.Cog):
             colour = discord.Colour.blue()
         )
         embed.set_image(url='https://media1.tenor.com/images/ef12d730c3d3044f384fea8cb6d8a3a5/tenor.gif')
+        await ctx.send(embed=embed)
+        
+    @commands.command()
+    async def giovanna(self, ctx):
+        embed = discord.Embed(
+            title = 'JIGSAY',
+            description = '#bike',
+            colour = discord.Colour.blue()
+        )
+        embed.set_image(url='https://media1.tenor.com/images/05f7b997db2f06947a97cd7671370cc5/tenor.gif?itemid=15725648')
         await ctx.send(embed=embed)
 
     #@commands.command()
