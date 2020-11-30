@@ -43,5 +43,9 @@ Simple discord bot
   - dance
   - pout
   - smug
+  
+**Others:**
+
+- 24 hour loop: a reminder message that shows every day at the same time
 
   *all interactions hava unique responses using it on the main bot and on another bot*
