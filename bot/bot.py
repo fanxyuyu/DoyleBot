@@ -113,7 +113,7 @@ async def fact(ctx):
         #embed.set_thumbnail(url = d)
         #await channels.send("@everyone")
         #await channels.send(embed = embed)
-        print("Mensagem de recompensa enviada")
+        #print("Mensagem de recompensa enviada")
     #except Exception as e:
         #print(f"Mensagem de recompensa error: {e}")
       
