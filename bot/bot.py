@@ -126,4 +126,4 @@ if __name__ == "__main__":
             exc = '{}: {}'.format(type(e).__name__, e)
             print('Failed to load extension {}\n{}'.format(extension, exc))
 
-client.run('NzU0MDQyNjgwNDEzMTI2ODA4.X1u--A.tyhgPrK7duNmyELhJZjImXXARJg')
+client.run('NzU0MDQyNjgwNDEzMTI2ODA4.X1u--A.kgJvFuK_tULkCPmtAzDGBPyvrto')
