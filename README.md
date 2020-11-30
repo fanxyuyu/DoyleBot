@@ -5,7 +5,7 @@ Simple discord bot
 ## Commands: 
 **Admin:**
   - clear <quantity>: deletes an specific amount of messages
-
+ 
 **Text:**
   - say: sends a message as the bot
   - embed: same as above but with embed
@@ -14,11 +14,13 @@ Simple discord bot
   - Help: shows all commands
   - Ping: shows bot ping
   - Italy: shows current time in Italy
+  - Avatar: shows user avatar
   
 **Fun:**
   - 8ball <question>: answer your question with a random phrase
   - names: shows a text with all names commands avaliable
   - reverse: reverse a text
+  - Fact: shows a random fact
  
 **Anime:**
 
@@ -36,6 +38,10 @@ Simple discord bot
   - insult: insult another user
   
   Reaction
-  - soon
+  - blush
+  - cry
+  - dance
+  - pout
+  - smug
 
   *all interactions hava unique responses using it on the main bot and on another bot*
