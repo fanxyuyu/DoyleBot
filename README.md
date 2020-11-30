@@ -11,16 +11,16 @@ Simple discord bot
   - embed: same as above but with embed
   
 **Basic:**
-  - Help: shows all commands
-  - Ping: shows bot ping
-  - Italy: shows current time in Italy
-  - Avatar: shows user avatar
+  - help: shows all commands
+  - ping: shows bot ping
+  - italy: shows current time in Italy
+  - avatar: shows user avatar
   
 **Fun:**
   - 8ball <question>: answer your question with a random phrase
   - names: shows a text with all names commands avaliable
   - reverse: reverse a text
-  - Fact: shows a random fact
+  - fact: shows a random fact
  
 **Anime:**
 
