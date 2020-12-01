@@ -84,7 +84,7 @@ async def on_command_error(ctx, error):
 
 #clear <qnt> command -> defined to role named a
 @client.command(aliases=['CLEAR', 'Clear'])
-@commands.has_role('a')
+@commands.has_role('POMF!')
 #@commands.cooldown(1, 90, commands.BucketType.user)
 async def clear(ctx, amount: int):
     await ctx.channel.purge(limit = amount + 1)
