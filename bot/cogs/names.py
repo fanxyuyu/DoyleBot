@@ -13,23 +13,27 @@ class names(commands.Cog):
     @commands.command()
     async def bruno(self, ctx):
         await ctx.send('Meu criador... ele que me fez assim :(')
-
     @commands.command()
     async def giovannasasa(self, ctx):
         await ctx.send('Sei lá giovanna... acho que é isso... Nunca mais vou me recuperar desse trauma. Rainha da programação nas horas vagas')
-
     @commands.command()
     async def baruel(self, ctx):
         await ctx.send('por favor baruel, para de mandar gif merda e de programar no celular 3 da manhã pelo celular na casa da namorada')
-
     @commands.command()
     async def cat(self, ctx):
         await ctx.send('Deboche, ironia e ódio gratuito... e pezinho fofinho :3')
-
     @commands.command()
     async def felipe(self, ctx):
         await ctx.send('Dançando kpop olhando pra baixo pra ver o leo')
-
+    @commands.command()
+    async def khtr(self, ctx):
+        await ctx.send('Parabéns por aguentar o pv, nunca vamos esquecer do seu sacrificio')
+    @commands.command()
+    async def thx(self, ctx):
+        await ctx.send('kkkkkkkkkk criptomoeda')
+    @commands.command()
+    async def udy(self, ctx):
+        await ctx.send('Nao importa a cor da sua pele segue lá: https://www.tiktok.com/@udaocacarato')
 
 
     @commands.command()
@@ -78,7 +82,7 @@ class names(commands.Cog):
 
     @commands.command()
     async def willy(self, ctx):
-        await ctx.send('Se não fosse pelo leo seria a maior revelação otaka do discord\nps: perdão pela bagunça no among us')
+        await ctx.send('Se não fosse pelo leo seria a maior revelação otaku do discord\nps: perdão pela bagunça no among us')
 
 
 
