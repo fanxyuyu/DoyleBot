@@ -25,7 +25,7 @@ class help(commands.Cog):
     @commands.command(aliases=['NAMES', 'Names'])
     async def names(self, ctx):
         embed = discord.Embed(colour = discord.Colour.blue())
-        embed.add_field(name='Names', value='baruel\nbruno\ncat\nfelipe\ngiovanna\nhiter\nleo\npv\nwilly\nkhtr\nudy\nthx', inline=False)
+        embed.add_field(name='Names', value='baruel\nbruno\ncat\nfelipe\ngiovanna\njack\nleo\npv\nwilly\nkhtr\nudy\nthx', inline=False)
         await ctx.send(embed=embed)
 
     #anime commands
