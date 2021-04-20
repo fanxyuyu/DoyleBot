@@ -16,7 +16,7 @@ class help(commands.Cog):
         embed.set_footer(text='*The moon is friend for the lonesome to talk to.*')
         #embed.set_thumbnail(url='https://i.ibb.co/S7mKyfQ/123.jpg')
         embed.set_image(url='https://i.ibb.co/S7mKyfQ/123.jpg')
-        embed.add_field(name='Admin/Fun', value='clear (A)\n8ball\nnames\nreverse\navatar\nsaporra')
+        embed.add_field(name='Admin/Fun', value='clear (A)\n8ball\nnames\nreverse\navatar\nsaporra\nfact')
         embed.add_field(name='Basic', value='help\nping\nitaly\nanime')
         embed.add_field(name='Text', value='say\nembed')
         await ctx.send(embed=embed)
@@ -25,7 +25,7 @@ class help(commands.Cog):
     @commands.command(aliases=['NAMES', 'Names'])
     async def names(self, ctx):
         embed = discord.Embed(colour = discord.Colour.blue())
-        embed.add_field(name='Names', value='baruel\nbruno\ncat\ndaniel\nfelipe\ngiovanna\nhiter\nleo\npv\nwilly', inline=False)
+        embed.add_field(name='Names', value='baruel\nbruno\ncat\nfelipe\ngiovanna\nhiter\nleo\npv\nwilly\nkhtr\nudy\nthx', inline=False)
         await ctx.send(embed=embed)
 
     #anime commands
