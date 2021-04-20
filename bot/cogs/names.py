@@ -18,7 +18,7 @@ class names(commands.Cog):
         await ctx.send('Sei lá giovanna... acho que é isso... Nunca mais vou me recuperar desse trauma. Rainha da programação nas horas vagas')
     @commands.command()
     async def baruel(self, ctx):
-        await ctx.send('por favor baruel, para de mandar gif merda e de programar no celular 3 da manhã pelo celular na casa da namorada')
+        await ctx.send('KKKKKKKKKK MLK É WEBDEV! VAI BOBAO, VAI LÁ FAZER SEU SITE KKKKKKKK #PYTHON')
     @commands.command()
     async def cat(self, ctx):
         await ctx.send('Deboche, ironia e ódio gratuito... e pezinho fofinho :3')
@@ -78,7 +78,7 @@ class names(commands.Cog):
 
     @commands.command()
     async def leo(self, ctx):
-        await ctx.send('Ta tudo bem leo, o importante é ser feliz e não perfeito')
+        await ctx.send('O=====D mama leo')
 
     @commands.command()
     async def willy(self, ctx):
