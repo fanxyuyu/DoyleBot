@@ -103,7 +103,7 @@ async def fact(ctx):
     x = randfacts.getFact()
     return await ctx.send(x)
 
-#mensagem de recompensa do realm
+#realm reminder
 #@tasks.loop(hours=24)
 #async def RecompensaRealm():
     #channels = client.get_channel(754189564670902292)
