@@ -1,10 +1,5 @@
-![](https://img.shields.io/badge/release-1.1-blue) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
-
-
-
-
 ## Simple Discord bot
-A simple project made using python and the discord API
+A simple project made to learn python using the Discord API
  - **bot prefix: !**
 
 ## Commands: 
