@@ -1,4 +1,4 @@
-##Simple Discord bot
+## Simple Discord bot
 A simple project made using python and the discord API
  - **bot prefix: !**
 
