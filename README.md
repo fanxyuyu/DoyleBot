@@ -15,7 +15,7 @@ To get the bot to work you should download the source code and follow the next s
 
 ## How to use
 
-**bot prefix:** !
+**bot prefix:** ! -> every command should be !command
 
 
 
