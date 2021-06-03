@@ -3,7 +3,7 @@
 This is just a simple discord bot that was made entirely in python using the [Discord py](https://discordpy.readthedocs.io/en/stable/) API. The bot is currently deployed on [Heroku](heroku.com).
 
 Everything was made with the intention of learning more about python in a fun and interactive way.
-
+____
 
 ## How to start
 
