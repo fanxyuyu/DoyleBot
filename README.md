@@ -61,3 +61,10 @@ To get the bot to work you should download the source code and follow the next s
   
 **Others:**
 - 24 hour loop: a reminder message that shows every day at the same time
+
+##TODO
+
+
+- [x] GFM task list 1
+- [x] GFM task list 2
+- [ ] GFM task list 3
