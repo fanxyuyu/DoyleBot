@@ -17,7 +17,7 @@ To get the bot to work you should download the source code and follow the next s
 
 **bot prefix: !** - every command should be like !command
 
-**Admin (limited by role or id)**
+**Admin** (limited by role or id)
   - clear <quantity>: deletes an specific amount of messages
  
 **Text**
@@ -28,7 +28,7 @@ To get the bot to work you should download the source code and follow the next s
   - help: shows a list with all the commands
   - ping: shows bot ping
   - italy: shows current time in Italy
-  - avatar: shows user avatar (example !avatar @user3)
+  - avatar: shows user avatar *(example !avatar @user3)*
   
 **Fun:**
   - 8ball <question>: answer your question with a random phrase
