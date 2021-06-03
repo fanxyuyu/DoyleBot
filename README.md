@@ -1,6 +1,6 @@
 ## About
 
-This is just a simple discord bot that was made entirely in python using the [Discord py](https://discordpy.readthedocs.io/en/stable/) API. The bot is currently deployed on [Heroku](dashboard.heroku.com).
+This is just a simple discord bot that was made entirely in python using the [Discord py](https://discordpy.readthedocs.io/en/stable/) API. The bot is currently deployed on [Heroku](https://dashboard.heroku.com).
 
 Everything was made with the intention of learning more about python in a fun and interactive way.
 
