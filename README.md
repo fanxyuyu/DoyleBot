@@ -20,7 +20,7 @@ To get the bot to work you should download the source code and follow the next s
 
 ### Commands:
 #### admin:
-
+  - clear <quantity>: deletes an specific amount of messages
 
 
 
