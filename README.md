@@ -1,5 +1,5 @@
-## Simple Discord bot
-A simple project made to learn python using the Discord API
+## The project
+This is just a simple discord bot that uses the [Discord PY](https://discordpy.readthedocs.io/en/stable/) API
  - **bot prefix: !**
 
 ## Commands: 
