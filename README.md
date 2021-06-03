@@ -5,7 +5,7 @@ This is just a simple discord bot that was made entirely in python using the [Di
 Everything was made with the intention of learning more about python in a fun and interactive way.
 
 
-## How to deploy it
+## How to start
 
 To get the bot to work you should download the source code and follow the next steps:
   1. Create a Heroku account and create a new project
