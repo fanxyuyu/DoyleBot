@@ -5,6 +5,15 @@ This is just a simple discord bot that was made entirely in python using the [Di
 Everything was made with the intention of learning more about python in a fun and interactive way.
 
 
+## How to deploy it
+
+To get the bot to work you should download the source code and follow the next steps:
+  1. Create a Heroku account and create a new project
+  2. Create a git repository with the same files (Basically you'll just add the Procfile and requirements files besides the base code)
+  3. Deploy directly from the repository link on heroku and be happy :)
+
+
+
 ## How to use
 
 **bot prefix: !**
