@@ -1,7 +1,7 @@
 ## The project
-This is just a simple discord bot that uses the [Discord PY](https://discordpy.readthedocs.io/en/stable/) API
+This is just a simple discord bot that uses the [Discord PY](https://discordpy.readthedocs.io/en/stable/) API and it's currently deployed on [Heroku](heroku.com)
 
-It's currently deployed on [Heroku](heroku.com)
+
  - **bot prefix: !**
 
 ## Commands: 
