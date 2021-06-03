@@ -19,6 +19,7 @@ To get the bot to work you should download the source code and follow the next s
 
 **Admin** (limited by role or id)
   - clear *<quantity>*: deletes an specific amount of messages
+  - close: forces the bot to close
  
 **Text**
   - say: the bot sends the message for you
