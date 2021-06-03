@@ -13,9 +13,8 @@ To get the bot to work you should download the source code and follow the next s
   3. Deploy directly from the repository link on the heroku project page and be happy :)
 
 
-## BOT Commands
+## List of Commands
 
-**Prefix**
 **bot prefix: !** - every command should be like !command
 
 ###
