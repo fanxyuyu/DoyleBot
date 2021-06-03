@@ -37,7 +37,6 @@ To get the bot to work you should download the source code and follow the next s
   - fact: shows a random fact *fun api that's constantly updating*
  
 **Anime:**
-
 - anime: shows a list with all anime commands
   
   interaction:
@@ -58,8 +57,7 @@ To get the bot to work you should download the source code and follow the next s
   - pout
   - smug
   
+*all the interaction have different results deppeding on the user being targeted, give it a try it's fun :)*
+  
 **Others:**
-
 - 24 hour loop: a reminder message that shows every day at the same time
-
-  *all interactions hava unique responses using it on the main bot and on another bot*
