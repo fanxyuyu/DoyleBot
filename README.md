@@ -4,6 +4,7 @@ This is just a simple discord bot that was made entirely in python using the [Di
 
 Everything was made with the intention of learning more about python in a fun and interactive way.
 
+
 ## How to use
 
 **bot prefix: !**
