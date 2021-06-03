@@ -1,11 +1,11 @@
-### About
+## About
 
 This is just a simple discord bot that was made entirely in python using the [Discord py](https://discordpy.readthedocs.io/en/stable/) API. The bot is currently deployed on [Heroku](heroku.com).
 
 Everything was made with the intention of learning more about python in a fun and interactive way.
 
 
-### How to start
+## How to start
 
 To get the bot to work you should download the source code and follow the next steps:
   1. Create a Heroku account and create a new project
@@ -13,7 +13,7 @@ To get the bot to work you should download the source code and follow the next s
   3. Deploy directly from the repository link on the heroku project page and be happy :)
 
 
-### List of Commands
+## List of Commands
 
 **bot prefix: !** - every command should be like !command
 
@@ -62,7 +62,7 @@ To get the bot to work you should download the source code and follow the next s
 **Others:**
 - 24 hour loop: a reminder message that shows every day at the same time
 
-### TODO
+## TODO
 - [x] Anime interactions
 - [x] Djando database interaction *(currently learning by doing a parallel bot on another repository)*
 - [ ] Web Scraping
