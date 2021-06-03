@@ -15,11 +15,11 @@ To get the bot to work you should download the source code and follow the next s
 
 ## BOT Commands
 
-### Prefix
+**Prefix**
 **bot prefix: !** - every command should be like !command
 
 ###
-### admin:
+**Admin:**
   - clear <quantity>: deletes an specific amount of messages
 
 
