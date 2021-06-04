@@ -65,5 +65,5 @@ To get the bot to work you should download the source code and follow the next s
 
 ## TODO
 - [x] Anime interactions
-- [x] Djando database interaction *(currently learning by doing a parallel bot on another repository)*
+- [x] Djando database interaction *(currently learning by doing on another project [here](https://github.com/fanxyuyu/DiscordQuizWithDjango))*
 - [ ] Web Scraping
